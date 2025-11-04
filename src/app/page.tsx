@@ -11,7 +11,7 @@ export default function Home() {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <Image 
-                src="/logo-with-text.png" 
+                src="/logo-with-text.webp" 
                 alt="Dineably Logo" 
                 width={200} 
                 height={50}
