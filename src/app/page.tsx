@@ -10,12 +10,14 @@ export default function Home() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <div className="flex items-center justify-center w-10 h-10 bg-white rounded">
-                <div className="text-black text-xl font-bold">D</div>
-              </div>
-              <div className="text-xl font-bold tracking-wide">
-                <span className="text-white">DRH</span> <span className="text-gray-400">MEDIA</span>
-              </div>
+              <Image 
+                src="/logo.png" 
+                alt="Dineably Logo" 
+                width={180} 
+                height={40}
+                className="h-10 w-auto"
+                priority
+              />
             </div>
 
             {/* Navigation */}
