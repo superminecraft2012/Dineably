@@ -88,8 +88,7 @@ export default function Home() {
           {/* Main Heading */}
           <div className="text-center mb-8">
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
-              Invest More. Convert<br />
-              more. <span className="italic font-serif">Scale</span> Faster.
+              Advertise Reliably with <span className="italic font-serif">Dineably</span>
             </h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
               We partner with successful 6 and 7-figure brands to unlock scalable,<br />
