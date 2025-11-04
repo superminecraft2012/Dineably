@@ -125,7 +125,7 @@ export default function Home() {
                   alt="Chada Thai" 
                   width={60} 
                   height={60}
-                  className="h-12 w-auto"
+                  className="h-10 w-auto"
                 />
                 <span className="text-lg font-semibold text-gray-300">Chada Thai</span>
               </div>
