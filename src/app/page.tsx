@@ -83,7 +83,7 @@ export default function Home() {
             {/* Logos Grid */}
             <div className="flex items-center justify-center flex-wrap gap-8 md:gap-12 lg:gap-16">
               {/* Thaprachan Thai */}
-              <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
+              <div className="flex items-end gap-3 opacity-70 hover:opacity-100 transition-opacity">
                 <Image 
                   src="/partners/ThaprachanLogo.webp" 
                   alt="Thaprachan Thai" 
@@ -95,7 +95,7 @@ export default function Home() {
               </div>
 
               {/* Racha Thai */}
-              <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
+              <div className="flex items-end gap-3 opacity-70 hover:opacity-100 transition-opacity">
                 <Image 
                   src="/partners/RachaThaiWoodinvilleLogoBestThaiRestaurant.webp" 
                   alt="Racha Thai" 
@@ -107,7 +107,7 @@ export default function Home() {
               </div>
 
               {/* Larb Thai */}
-              <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
+              <div className="flex items-end gap-3 opacity-70 hover:opacity-100 transition-opacity">
                 <Image 
                   src="/partners/larblogo.webp" 
                   alt="Larb Thai" 
@@ -119,19 +119,19 @@ export default function Home() {
               </div>
 
               {/* Chada Thai */}
-              <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
+              <div className="flex items-end gap-3 opacity-70 hover:opacity-100 transition-opacity">
                 <Image 
                   src="/partners/chadalynnwoodlogo.webp" 
                   alt="Chada Thai" 
                   width={60} 
                   height={60}
-                  className="h-10 w-auto"
+                  className="h-8 w-auto"
                 />
                 <span className="text-lg font-semibold text-gray-300">Chada Thai</span>
               </div>
 
               {/* Emerald Thai */}
-              <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
+              <div className="flex items-end gap-3 opacity-70 hover:opacity-100 transition-opacity">
                 <Image 
                   src="/partners/emerald-logo.webp" 
                   alt="Emerald Thai" 
