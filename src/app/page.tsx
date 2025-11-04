@@ -11,11 +11,11 @@ export default function Home() {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <Image 
-                src="/logo.png" 
+                src="/logo-with-text.png" 
                 alt="Dineably Logo" 
-                width={180} 
-                height={40}
-                className="h-10 w-auto"
+                width={200} 
+                height={50}
+                className="h-12 w-auto"
                 priority
               />
             </div>
