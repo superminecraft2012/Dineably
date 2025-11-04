@@ -82,34 +82,65 @@ export default function Home() {
             
             {/* Logos Grid */}
             <div className="flex items-center justify-center flex-wrap gap-8 md:gap-12 lg:gap-16">
-              {/* Logo placeholders - you can replace these with actual logo images */}
-              <div className="flex items-center gap-2 opacity-50 hover:opacity-100 transition-opacity">
-                <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded"></div>
-                <span className="text-lg font-bold text-gray-400">Pooch Patch</span>
+              {/* Thaprachan Thai */}
+              <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
+                <Image 
+                  src="/partners/ThaprachanLogo.webp" 
+                  alt="Thaprachan Thai" 
+                  width={60} 
+                  height={60}
+                  className="h-12 w-auto"
+                />
+                <span className="text-lg font-semibold text-gray-300">Thaprachan Thai</span>
               </div>
-              <div className="flex items-center gap-2 opacity-50 hover:opacity-100 transition-opacity">
-                <div className="w-8 h-8 bg-gradient-to-br from-amber-700 to-amber-900 rounded-full"></div>
-                <span className="text-lg font-bold text-gray-400">The Strap Tailor</span>
+
+              {/* Racha Thai */}
+              <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
+                <Image 
+                  src="/partners/RachaThaiWoodinvilleLogoBestThaiRestaurant.webp" 
+                  alt="Racha Thai" 
+                  width={60} 
+                  height={60}
+                  className="h-12 w-auto"
+                />
+                <span className="text-lg font-semibold text-gray-300">Racha Thai</span>
               </div>
-              <div className="flex items-center gap-2 opacity-50 hover:opacity-100 transition-opacity">
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full"></div>
-                <span className="text-lg font-bold text-gray-400">WEN</span>
+
+              {/* Larb Thai */}
+              <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
+                <Image 
+                  src="/partners/larblogo.webp" 
+                  alt="Larb Thai" 
+                  width={60} 
+                  height={60}
+                  className="h-12 w-auto"
+                />
+                <span className="text-lg font-semibold text-gray-300">Larb Thai</span>
               </div>
-              <div className="text-xl font-light text-gray-400 opacity-50 hover:opacity-100 transition-opacity">zeno</div>
-              <div className="flex items-center gap-1 opacity-50 hover:opacity-100 transition-opacity">
-                <div className="flex gap-0.5">
-                  <div className="w-1.5 h-8 bg-red-500 rounded-full"></div>
-                  <div className="w-1.5 h-8 bg-red-500 rounded-full"></div>
-                  <div className="w-1.5 h-8 bg-red-500 rounded-full"></div>
-                </div>
-                <span className="text-lg italic text-gray-400">besti</span>
+
+              {/* Chada Thai */}
+              <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
+                <Image 
+                  src="/partners/chadalynnwoodlogo.webp" 
+                  alt="Chada Thai" 
+                  width={60} 
+                  height={60}
+                  className="h-12 w-auto"
+                />
+                <span className="text-lg font-semibold text-gray-300">Chada Thai</span>
               </div>
-              <div className="flex items-center gap-2 opacity-50 hover:opacity-100 transition-opacity">
-                <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-600 rounded"></div>
-                <span className="text-lg font-bold text-gray-400">uxlight</span>
+
+              {/* Emerald Thai */}
+              <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
+                <Image 
+                  src="/partners/emerald-logo.webp" 
+                  alt="Emerald Thai" 
+                  width={60} 
+                  height={60}
+                  className="h-12 w-auto"
+                />
+                <span className="text-lg font-semibold text-gray-300">Emerald Thai</span>
               </div>
-              <div className="text-lg font-semibold text-gray-400 tracking-wider opacity-50 hover:opacity-100 transition-opacity">LE SENSOR</div>
-              <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-pink-500 rounded-lg opacity-50 hover:opacity-100 transition-opacity"></div>
             </div>
           </div>
         </div>
