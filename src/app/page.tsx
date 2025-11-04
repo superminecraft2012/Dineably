@@ -71,8 +71,8 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Orange Glow Effect */}
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/4 w-[600px] h-[600px] bg-gradient-to-r from-orange-500 to-red-500 rounded-full blur-[150px] opacity-30 pointer-events-none"></div>
+          {/* Blue Glow Effect */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/4 w-[600px] h-[600px] bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full blur-[150px] opacity-30 pointer-events-none"></div>
         </div>
 
         {/* Partner Logos Section */}
