@@ -1,54 +1,10 @@
 import Image from "next/image";
-import Link from "next/link";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-      {/* Header */}
-      <header className="border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            {/* Logo */}
-            <div className="flex items-center gap-3">
-              <Image 
-                src="/logo-with-text.webp" 
-                alt="Dineably Logo" 
-                width={200} 
-                height={50}
-                className="h-12 w-auto"
-                priority
-              />
-            </div>
-
-            {/* Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link href="/" className="text-white hover:text-gray-300 transition-colors">
-                Home
-              </Link>
-              <Link href="/why-us" className="text-gray-400 hover:text-white transition-colors">
-                Why Us
-              </Link>
-              <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
-                Services
-              </Link>
-              <Link href="/case-studies" className="text-gray-400 hover:text-white transition-colors">
-                Case Studies
-              </Link>
-              <Link href="/process" className="text-gray-400 hover:text-white transition-colors">
-                Process
-              </Link>
-              <Link href="/faq" className="text-gray-400 hover:text-white transition-colors">
-                FAQ
-              </Link>
-            </nav>
-
-            {/* CTA Button */}
-            <button className="bg-white text-black px-6 py-2.5 rounded-lg font-medium hover:bg-gray-100 transition-colors">
-              Start Scaling
-            </button>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
@@ -101,7 +57,7 @@ export default function Home() {
 
           {/* CTA Buttons */}
           <div className="flex items-center justify-center gap-4 mb-20">
-            <button className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all flex items-center gap-2 shadow-lg shadow-purple-500/50">
+            <button className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all flex items-center gap-2 shadow-lg shadow-orange-500/50">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -115,8 +71,8 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Purple Glow Effect */}
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/4 w-[600px] h-[600px] bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur-[150px] opacity-30 pointer-events-none"></div>
+          {/* Orange Glow Effect */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/4 w-[600px] h-[600px] bg-gradient-to-r from-orange-500 to-red-500 rounded-full blur-[150px] opacity-30 pointer-events-none"></div>
         </div>
 
         {/* Partner Logos Section */}
