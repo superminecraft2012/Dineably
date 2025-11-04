@@ -43,8 +43,11 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Blue Glow Effect - Behind everything */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/4 w-[600px] h-[600px] bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full blur-[150px] opacity-30 pointer-events-none"></div>
+
           {/* Main Heading */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-8 relative z-10">
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
               Scale <span className="italic font-serif">Reliably</span>,<br />
               with <span className="italic font-serif">Dineably</span>
@@ -55,8 +58,8 @@ export default function Home() {
             </p>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex items-center justify-center gap-4 mb-20">
+          {/* CTA Buttons - Above the glow */}
+          <div className="flex items-center justify-center gap-4 mb-20 relative z-10">
             <button className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all flex items-center gap-2 shadow-lg shadow-orange-500/50">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -70,9 +73,6 @@ export default function Home() {
               </svg>
             </button>
           </div>
-
-          {/* Blue Glow Effect */}
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/4 w-[600px] h-[600px] bg-gradient-to-r from-cyan-400 to-blue-600 rounded-full blur-[150px] opacity-30 pointer-events-none"></div>
         </div>
 
         {/* Partner Logos Section */}
