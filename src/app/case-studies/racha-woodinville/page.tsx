@@ -6,6 +6,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Racha Thai Case Study: Top 3 Local Rankings in 6 Weeks | Dineably",
   description: "How we took a brand new Woodinville restaurant from zero online presence to top 3 local rankings and 120+ monthly orders from search in just 6 weeks.",
+  alternates: {
+    canonical: "https://dineably.com/case-studies/racha-woodinville",
+  },
   openGraph: {
     title: "Racha Thai Case Study: Top 3 Local Rankings in 6 Weeks | Dineably",
     description: "Zero to top 3 local rankings in 6 weeks. 120+ monthly orders from search for new Woodinville Thai restaurant.",

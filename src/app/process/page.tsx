@@ -6,6 +6,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Our 4-Step Restaurant Marketing Process (Seattle) | Dineably",
   description: "Proven process: audit, strategy, launch, optimize. We build fast websites, rank restaurants on Google & run profitable ads in Seattle & surrounding areas.",
+  alternates: {
+    canonical: "https://dineably.com/process",
+  },
   openGraph: {
     title: "Our 4-Step Restaurant Marketing Process (Seattle) | Dineably",
     description: "Proven process: audit, strategy, launch, optimize. We build fast websites, rank restaurants on Google & run profitable ads in Seattle & surrounding areas.",

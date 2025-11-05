@@ -5,6 +5,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Restaurant Marketing FAQ - Pricing, Timeline, Results | Dineably",
   description: "Common questions about restaurant websites, SEO & ads in Seattle. Learn about pricing, timelines, and what to expect from Dineably's services.",
+  alternates: {
+    canonical: "https://dineably.com/faq",
+  },
   openGraph: {
     title: "Restaurant Marketing FAQ - Pricing, Timeline, Results | Dineably",
     description: "Common questions about restaurant websites, SEO & ads in Seattle. Learn about pricing, timelines, and what to expect from Dineably's services.",

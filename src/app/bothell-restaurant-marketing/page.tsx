@@ -6,6 +6,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Bothell Restaurant Marketing: Websites, SEO & Ads | Dineably",
   description: "Restaurant marketing for Bothell, WA. Fast websites, local SEO, and ads for restaurants in Downtown Bothell, Canyon Park, and Northshore. Call 425-420-7090",
+  alternates: {
+    canonical: "https://dineably.com/bothell-restaurant-marketing",
+  },
   openGraph: {
     title: "Bothell Restaurant Marketing: Websites, SEO & Ads | Dineably",
     description: "Fast websites, local SEO, and profitable ads for Bothell restaurants.",

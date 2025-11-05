@@ -6,6 +6,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Redmond Restaurant Marketing: Websites, SEO & Ads | Dineably",
   description: "Restaurant marketing for Redmond, WA. Fast websites, local SEO, and ads for restaurants near Microsoft campus, Downtown Redmond, and Overlake. Call 425-420-7090",
+  alternates: {
+    canonical: "https://dineably.com/redmond-restaurant-marketing",
+  },
   openGraph: {
     title: "Redmond Restaurant Marketing: Websites, SEO & Ads | Dineably",
     description: "Fast websites, local SEO, and profitable ads for Redmond restaurants.",

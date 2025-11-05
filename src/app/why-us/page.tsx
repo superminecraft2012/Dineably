@@ -6,6 +6,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Why Choose Us - Restaurant Marketing Experts (Seattle) | Dineably",
   description: "Proven restaurant marketing agency in Seattle specializing in websites, SEO & ads. 65+ brands scaled. Fast results for Thai, Asian & local restaurants.",
+  alternates: {
+    canonical: "https://dineably.com/why-us",
+  },
   openGraph: {
     title: "Why Choose Us - Restaurant Marketing Experts (Seattle) | Dineably",
     description: "Proven restaurant marketing agency in Seattle specializing in websites, SEO & ads. 65+ brands scaled. Fast results for Thai, Asian & local restaurants.",

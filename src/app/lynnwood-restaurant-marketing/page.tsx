@@ -6,6 +6,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Lynnwood Restaurant Marketing: Websites, SEO & Ads | Dineably",
   description: "Restaurant marketing for Lynnwood, WA. Fast websites, local SEO, and ads for restaurants in Alderwood Mall area, Downtown Lynnwood. Call 425-420-7090",
+  alternates: {
+    canonical: "https://dineably.com/lynnwood-restaurant-marketing",
+  },
   openGraph: {
     title: "Lynnwood Restaurant Marketing: Websites, SEO & Ads | Dineably",
     description: "Fast websites, local SEO, and profitable ads for Lynnwood restaurants.",

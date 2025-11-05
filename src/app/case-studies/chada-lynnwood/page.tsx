@@ -6,6 +6,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Chada Thai Case Study: 52% Conversion Rate Increase | Dineably",
   description: "How we transformed Chada Thai's mobile experience and increased conversion rate by 52%, phone calls by 40%, with a 92 Lighthouse score.",
+  alternates: {
+    canonical: "https://dineably.com/case-studies/chada-lynnwood",
+  },
   openGraph: {
     title: "Chada Thai Case Study: 52% Conversion Rate Increase | Dineably",
     description: "52% conversion rate increase and 40% more phone calls with mobile-optimized website redesign for Lynnwood Thai restaurant.",
