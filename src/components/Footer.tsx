@@ -16,8 +16,8 @@ export default function Footer() {
                 <p className="font-semibold text-white mt-4">Contact</p>
                 <p className="text-sm">Seattle, WA</p>
                 <p className="text-sm">
-                  <a href="tel:+12065551234" className="hover:text-white transition-colors">
-                    (206) 555-1234
+                  <a href="tel:+14254207090" className="hover:text-white transition-colors">
+                    (425) 420-7090
                   </a>
                 </p>
                 <p className="text-sm">
@@ -28,8 +28,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="font-semibold text-white mt-4">Hours</p>
-                <p className="text-sm">Monday - Friday: 9am - 6pm PST</p>
-                <p className="text-sm">Weekend: By Appointment</p>
+                <p className="text-sm">Monday - Sunday: 9am - 5pm PST</p>
               </div>
             </div>
           </div>
@@ -75,15 +74,39 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Service Areas</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li>Seattle, WA</li>
-              <li>Bellevue, WA</li>
-              <li>Kirkland, WA</li>
-              <li>Redmond, WA</li>
-              <li>Lynnwood, WA</li>
-              <li>Greater Puget Sound Region</li>
+              <li>
+                <Link href="/seattle-restaurant-marketing" className="hover:text-white transition-colors">
+                  Seattle, WA
+                </Link>
+              </li>
+              <li>
+                <Link href="/bellevue-restaurant-marketing" className="hover:text-white transition-colors">
+                  Bellevue, WA
+                </Link>
+              </li>
+              <li>
+                <Link href="/kirkland-restaurant-marketing" className="hover:text-white transition-colors">
+                  Kirkland, WA
+                </Link>
+              </li>
+              <li>
+                <Link href="/redmond-restaurant-marketing" className="hover:text-white transition-colors">
+                  Redmond, WA
+                </Link>
+              </li>
+              <li>
+                <Link href="/lynnwood-restaurant-marketing" className="hover:text-white transition-colors">
+                  Lynnwood, WA
+                </Link>
+              </li>
+              <li>
+                <Link href="/woodinville-restaurant-marketing" className="hover:text-white transition-colors">
+                  Woodinville, WA
+                </Link>
+              </li>
             </ul>
             <p className="text-xs text-gray-500 mt-4">
-              Serving restaurants throughout Washington State and beyond
+              Serving restaurants throughout Greater Seattle & Puget Sound
             </p>
           </div>
 

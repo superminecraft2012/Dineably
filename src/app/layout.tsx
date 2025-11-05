@@ -48,11 +48,27 @@ export default function RootLayout({
     "url": "https://dineably.com",
     "logo": "https://dineably.com/logo-with-text.webp",
     "description": "Restaurant marketing agency specializing in websites, local SEO, and digital advertising",
+    "telephone": "+1-425-420-7090",
+    "email": "hello@dineably.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Seattle",
       "addressRegion": "WA",
       "addressCountry": "US"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "17:00"
     },
     "areaServed": [
       {
@@ -74,6 +90,14 @@ export default function RootLayout({
       {
         "@type": "City",
         "name": "Lynnwood"
+      },
+      {
+        "@type": "City",
+        "name": "Woodinville"
+      },
+      {
+        "@type": "City",
+        "name": "Bothell"
       }
     ],
     "sameAs": [
