@@ -108,26 +108,26 @@ export default function CaseStudies() {
             </div>
           </Link>
 
-          {/* Racha Thai */}
-          <Link href="/case-studies/racha-woodinville" className="group">
+          {/* Larb Thai */}
+          <Link href="/case-studies/larb-seattle" className="group">
             <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 border border-white/10 rounded-lg p-8 hover:border-orange-500/50 transition-all h-full">
-              <div className="text-xs text-red-400 mb-3 font-semibold uppercase">Thai Restaurant • Woodinville</div>
-              <h3 className="text-3xl font-bold mb-4 group-hover:text-orange-400 transition-colors">Racha Thai</h3>
+              <div className="text-xs text-red-400 mb-3 font-semibold uppercase">Thai Restaurant • Seattle</div>
+              <h3 className="text-3xl font-bold mb-4 group-hover:text-orange-400 transition-colors">Larb Thai</h3>
               <p className="text-gray-400 mb-6">
-                New location, zero online presence. Ranked #2 in local pack within 6 weeks and generated 120+ monthly orders from search.
+                Increased online orders by 250% in 90 days through website optimization, local SEO, and targeted advertising.
               </p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-2 text-sm">
                   <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                  <span className="text-gray-300">Top 3 Local Rankings</span>
+                  <span className="text-gray-300">+250% Online Orders</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm">
                   <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                  <span className="text-gray-300">120+ Monthly Orders</span>
+                  <span className="text-gray-300">+180% Organic Traffic</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm">
                   <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                  <span className="text-gray-300">850% Traffic Increase</span>
+                  <span className="text-gray-300">#4 Local Pack Ranking</span>
                 </div>
               </div>
               <div className="flex items-center gap-2 text-orange-400 font-semibold text-sm">

@@ -150,18 +150,6 @@ export default function Home() {
                 <span className="text-lg font-semibold text-gray-300">Thaprachan Thai</span>
               </div>
 
-              {/* Racha Thai */}
-              <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
-                <Image 
-                  src="/partners/RachaThaiWoodinvilleLogoBestThaiRestaurant.webp" 
-                  alt="Racha Thai Woodinville logo - Best Thai restaurant digital marketing client" 
-                  width={60} 
-                  height={60}
-                  className="h-12 w-auto"
-                />
-                <span className="text-lg font-semibold text-gray-300">Racha Thai</span>
-              </div>
-
               {/* Larb Thai */}
               <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
                 <Image 
@@ -411,20 +399,20 @@ export default function Home() {
             </Link>
 
             {/* Case 2 */}
-            <Link href="/case-studies" className="group">
+            <Link href="/case-studies/larb-seattle" className="group">
               <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 border border-white/10 rounded-lg p-8 hover:border-orange-500/50 transition-all h-full">
-                <div className="text-xs text-red-400 font-semibold mb-3 uppercase">Thai Restaurant • Woodinville</div>
+                <div className="text-xs text-red-400 font-semibold mb-3 uppercase">Thai Restaurant • Seattle</div>
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-orange-400 transition-colors">
-                  Racha Thai
+                  Larb Thai
                 </h3>
                 <div className="space-y-3 mb-6">
                   <div>
                     <p className="text-sm text-gray-400 mb-1">Problem</p>
-                    <p className="text-white">New location, zero online presence, competing with established spots</p>
+                    <p className="text-white">Slow website, poor online visibility, losing customers to competitors</p>
                   </div>
                   <div>
                     <p className="text-sm text-gray-400 mb-1">90-Day Result</p>
-                    <p className="text-white font-semibold">Top 3 local rankings • 120+ new monthly orders</p>
+                    <p className="text-white font-semibold">+250% online orders • +180% organic traffic</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2 text-orange-400 text-sm font-semibold">

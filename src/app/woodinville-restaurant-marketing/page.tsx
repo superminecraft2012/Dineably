@@ -144,43 +144,6 @@ export default function WoodinvilleRestaurantMarketing() {
         </div>
       </section>
 
-      {/* Case Study Highlight */}
-      <section className="py-20 bg-black border-t border-white/10">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-8 text-center">Woodinville Success Story</h2>
-          
-          <Link href="/case-studies/racha-woodinville">
-            <div className="border border-white/10 rounded-lg p-8 hover:border-orange-500/50 transition-all">
-              <div className="flex items-start justify-between mb-6">
-                <div>
-                  <h3 className="text-2xl font-bold mb-2">Racha Thai Woodinville</h3>
-                  <p className="text-gray-400">New location ranked #2 in local pack within 6 weeks</p>
-                </div>
-                <div className="text-right">
-                  <div className="text-3xl font-bold text-orange-400">#2</div>
-                  <div className="text-sm text-gray-400">Local Ranking</div>
-                </div>
-              </div>
-              <div className="grid grid-cols-3 gap-4 text-sm mb-4">
-                <div>
-                  <span className="text-gray-400">Monthly Orders:</span>
-                  <span className="ml-2 font-semibold">120+</span>
-                </div>
-                <div>
-                  <span className="text-gray-400">Traffic Growth:</span>
-                  <span className="ml-2 font-semibold">850%</span>
-                </div>
-                <div>
-                  <span className="text-gray-400">Timeline:</span>
-                  <span className="ml-2 font-semibold">6 weeks</span>
-                </div>
-              </div>
-              <div className="text-orange-400 text-sm font-semibold">Read Full Case Study →</div>
-            </div>
-          </Link>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-20 bg-black">
         <div className="max-w-4xl mx-auto px-6 text-center">

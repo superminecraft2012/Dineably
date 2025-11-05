@@ -260,15 +260,15 @@ export default function WhyUs() {
                 ))}
               </div>
               <p className="text-gray-300 mb-6 italic">
-                &quot;We opened in a competitive area and Dineably got us ranking on Google Maps in just 6 weeks. Now we&apos;re getting 120+ new orders per month from search alone.&quot;
+                &quot;Our website was slow and outdated. Dineably rebuilt it, optimized our SEO, and our online orders increased by 250% in just 3 months. Incredible results.&quot;
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-xl font-bold">
-                  R
+                  L
                 </div>
                 <div>
-                  <div className="font-semibold">Rachel K.</div>
-                  <div className="text-sm text-gray-400">Owner, Racha Thai Woodinville</div>
+                  <div className="font-semibold">Layla N.</div>
+                  <div className="text-sm text-gray-400">Owner, Larb Thai Seattle</div>
                 </div>
               </div>
             </div>

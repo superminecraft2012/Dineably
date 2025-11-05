@@ -37,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Case study pages
   const caseStudies = [
     '/case-studies/thaprachan-seattle',
-    '/case-studies/racha-woodinville',
+    '/case-studies/larb-seattle',
     '/case-studies/chada-lynnwood',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
