@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import Script from 'next/script';
 import { initializeAnalytics, trackPageView } from '@/lib/analytics';
@@ -15,14 +15,10 @@ import { initializeAnalytics, trackPageView } from '@/lib/analytics';
  * - NEXT_PUBLIC_GOOGLE_ADS_ID
  */
 
-export default function Analytics() {
+// Separate component for tracking that uses useSearchParams
+function AnalyticsTracker({ GA4_ID }: { GA4_ID: string }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-
-  // Get tracking IDs from environment variables
-  const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID || '';
-  const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID || '';
-  const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || '';
 
   // Track page views on route change
   useEffect(() => {
@@ -37,8 +33,22 @@ export default function Analytics() {
     initializeAnalytics();
   }, []);
 
+  return null;
+}
+
+export default function Analytics() {
+  // Get tracking IDs from environment variables
+  const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID || '';
+  const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID || '';
+  const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || '';
+
   return (
     <>
+      {/* Tracking component wrapped in Suspense */}
+      <Suspense fallback={null}>
+        <AnalyticsTracker GA4_ID={GA4_ID} />
+      </Suspense>
+
       {/* Google Analytics 4 */}
       {GA4_ID && (
         <>
