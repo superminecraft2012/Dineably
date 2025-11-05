@@ -1,13 +1,27 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Services - Restaurant Growth Solutions | Dineably",
-  description: "Comprehensive solutions to scale your restaurant brand reliably. Discover our expert services designed to help restaurants achieve profitable, sustainable growth.",
+  title: "Restaurant Website Design, SEO & Advertising Services | Dineably",
+  description: "Full-service restaurant marketing in Seattle: custom websites, local SEO, Google Ads & social media for restaurants in Bellevue, Kirkland, Redmond.",
   openGraph: {
-    title: "Our Services - Restaurant Growth Solutions | Dineably",
-    description: "Comprehensive solutions to scale your restaurant brand reliably.",
+    title: "Restaurant Website Design, SEO & Advertising Services | Dineably",
+    description: "Full-service restaurant marketing in Seattle: custom websites, local SEO, Google Ads & social media for restaurants in Bellevue, Kirkland, Redmond.",
     url: "https://dineably.com/services",
+    images: [
+      {
+        url: "https://dineably.com/logo-with-text.webp",
+        width: 1200,
+        height: 630,
+        alt: "Dineably Restaurant Marketing Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Restaurant Website Design, SEO & Advertising Services | Dineably",
+    description: "Full-service restaurant marketing in Seattle: custom websites, local SEO, Google Ads & social media for restaurants in Bellevue, Kirkland, Redmond.",
   },
 };
 
@@ -78,6 +92,7 @@ export default function Services() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }

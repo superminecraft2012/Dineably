@@ -1,13 +1,27 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Why Choose Dineably - What Sets Us Apart | Dineably",
-  description: "Discover what sets Dineably apart in scaling restaurant brands to new heights. Learn about our proven track record, industry expertise, and dedicated support.",
+  title: "Why Choose Us - Restaurant Marketing Experts (Seattle) | Dineably",
+  description: "Proven restaurant marketing agency in Seattle specializing in websites, SEO & ads. 65+ brands scaled. Fast results for Thai, Asian & local restaurants.",
   openGraph: {
-    title: "Why Choose Dineably - What Sets Us Apart | Dineably",
-    description: "Discover what sets us apart in scaling restaurant brands to new heights.",
+    title: "Why Choose Us - Restaurant Marketing Experts (Seattle) | Dineably",
+    description: "Proven restaurant marketing agency in Seattle specializing in websites, SEO & ads. 65+ brands scaled. Fast results for Thai, Asian & local restaurants.",
     url: "https://dineably.com/why-us",
+    images: [
+      {
+        url: "https://dineably.com/logo-with-text.webp",
+        width: 1200,
+        height: 630,
+        alt: "Why Choose Dineably",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Why Choose Us - Restaurant Marketing Experts (Seattle) | Dineably",
+    description: "Proven restaurant marketing agency in Seattle specializing in websites, SEO & ads. 65+ brands scaled. Fast results for Thai, Asian & local restaurants.",
   },
 };
 
@@ -78,6 +92,7 @@ export default function WhyUs() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }

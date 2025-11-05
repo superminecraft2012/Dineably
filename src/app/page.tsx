@@ -1,9 +1,51 @@
 import Image from "next/image";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Restaurant Websites, Local SEO & Ads (Seattle) | Dineably",
+  description: "Dineably builds fast restaurant sites, local SEO, and ads that turn visits into orders. Serving Seattle, Bellevue, Kirkland, Redmond, Lynnwood.",
+  openGraph: {
+    title: "Restaurant Websites, Local SEO & Ads (Seattle) | Dineably",
+    description: "Dineably builds fast restaurant sites, local SEO, and ads that turn visits into orders. Serving Seattle, Bellevue, Kirkland, Redmond, Lynnwood.",
+    url: "https://dineably.com",
+    images: [
+      {
+        url: "https://dineably.com/logo-with-text.webp",
+        width: 1200,
+        height: 630,
+        alt: "Dineably Restaurant Marketing",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Restaurant Websites, Local SEO & Ads (Seattle) | Dineably",
+    description: "Dineably builds fast restaurant sites, local SEO, and ads that turn visits into orders. Serving Seattle, Bellevue, Kirkland, Redmond, Lynnwood.",
+  },
+};
 
 export default function Home() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://dineably.com"
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-black text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Header />
 
       {/* Hero Section */}
@@ -86,7 +128,7 @@ export default function Home() {
               <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
                 <Image 
                   src="/partners/ThaprachanLogo.webp" 
-                  alt="Thaprachan Thai" 
+                  alt="Thaprachan Thai restaurant logo - Seattle Thai restaurant marketing client" 
                   width={60} 
                   height={60}
                   className="h-12 w-auto"
@@ -98,7 +140,7 @@ export default function Home() {
               <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
                 <Image 
                   src="/partners/RachaThaiWoodinvilleLogoBestThaiRestaurant.webp" 
-                  alt="Racha Thai" 
+                  alt="Racha Thai Woodinville logo - Best Thai restaurant digital marketing client" 
                   width={60} 
                   height={60}
                   className="h-12 w-auto"
@@ -110,7 +152,7 @@ export default function Home() {
               <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
                 <Image 
                   src="/partners/larblogo.webp" 
-                  alt="Larb Thai" 
+                  alt="Larb Thai restaurant logo - Seattle Thai restaurant SEO client" 
                   width={60} 
                   height={60}
                   className="h-12 w-auto"
@@ -122,7 +164,7 @@ export default function Home() {
               <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
                 <Image 
                   src="/partners/chadalynnwoodlogo.webp" 
-                  alt="Chada Thai" 
+                  alt="Chada Thai Lynnwood logo - Restaurant website design client" 
                   width={60} 
                   height={60}
                   className="h-8 w-auto"
@@ -134,7 +176,7 @@ export default function Home() {
               <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
                 <Image 
                   src="/partners/emerald-logo.webp" 
-                  alt="Emerald Thai" 
+                  alt="Emerald Thai restaurant logo - Local restaurant marketing partner" 
                   width={60} 
                   height={60}
                   className="h-12 w-auto"
@@ -145,6 +187,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }

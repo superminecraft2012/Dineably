@@ -1,13 +1,27 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our Process - How We Scale Restaurants | Dineably",
-  description: "Discover our proven, step-by-step approach to scaling restaurant brands. From discovery to optimization, learn how we help restaurants achieve sustainable growth.",
+  title: "Our 4-Step Restaurant Marketing Process (Seattle) | Dineably",
+  description: "Proven process: audit, strategy, launch, optimize. We build fast websites, rank restaurants on Google & run profitable ads in Seattle & surrounding areas.",
   openGraph: {
-    title: "Our Process - How We Scale Restaurants | Dineably",
-    description: "A proven, step-by-step approach to scaling your restaurant brand.",
+    title: "Our 4-Step Restaurant Marketing Process (Seattle) | Dineably",
+    description: "Proven process: audit, strategy, launch, optimize. We build fast websites, rank restaurants on Google & run profitable ads in Seattle & surrounding areas.",
     url: "https://dineably.com/process",
+    images: [
+      {
+        url: "https://dineably.com/logo-with-text.webp",
+        width: 1200,
+        height: 630,
+        alt: "Dineably Marketing Process",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our 4-Step Restaurant Marketing Process (Seattle) | Dineably",
+    description: "Proven process: audit, strategy, launch, optimize. We build fast websites, rank restaurants on Google & run profitable ads in Seattle & surrounding areas.",
   },
 };
 
@@ -31,6 +45,44 @@ export default function Process() {
     ]
   };
 
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Scale Your Restaurant with Dineably",
+    "description": "Our proven 4-step process for scaling restaurant brands through websites, SEO, and digital advertising",
+    "totalTime": "P90D",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Discovery & Analysis",
+        "text": "We conduct a comprehensive audit of your current marketing, identify opportunities, and analyze your competition. This includes reviewing your website, SEO rankings, online presence, and advertising performance.",
+        "image": "https://dineably.com/logo-with-text.webp"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Strategy Development",
+        "text": "Based on our analysis, we create a custom marketing strategy tailored to your restaurant. This includes website design plans, SEO keyword targeting, content strategy, and advertising campaigns optimized for your local market.",
+        "image": "https://dineably.com/logo-with-text.webp"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Implementation",
+        "text": "We build your fast, mobile-optimized restaurant website, implement on-page and technical SEO, set up local business profiles, and launch targeted advertising campaigns on Google and social media platforms.",
+        "image": "https://dineably.com/logo-with-text.webp"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Optimization & Growth",
+        "text": "We continuously monitor performance, optimize campaigns, improve SEO rankings, and scale what works. You receive regular reports showing increased traffic, rankings, and orders.",
+        "image": "https://dineably.com/logo-with-text.webp"
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-black text-white">
       <Header />
@@ -39,6 +91,12 @@ export default function Process() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      
+      {/* Structured Data for HowTo */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
 
       {/* Hero Section */}
@@ -107,6 +165,7 @@ export default function Process() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }

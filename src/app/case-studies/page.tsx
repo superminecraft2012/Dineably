@@ -1,13 +1,27 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Case Studies - Restaurant Success Stories | Dineably",
-  description: "Discover real results from restaurants we've helped scale. See how we've helped 6 and 7-figure brands break past barriers and achieve 8-figure growth.",
+  title: "Restaurant Marketing Case Studies (Seattle) | Dineably",
+  description: "Real results: Thai restaurants in Seattle increased orders 300%+ with our websites, SEO & ads. See case studies from Bellevue, Kirkland & Lynnwood.",
   openGraph: {
-    title: "Case Studies - Restaurant Success Stories | Dineably",
-    description: "Real results from real restaurants we've helped scale to new heights.",
+    title: "Restaurant Marketing Case Studies (Seattle) | Dineably",
+    description: "Real results: Thai restaurants in Seattle increased orders 300%+ with our websites, SEO & ads. See case studies from Bellevue, Kirkland & Lynnwood.",
     url: "https://dineably.com/case-studies",
+    images: [
+      {
+        url: "https://dineably.com/logo-with-text.webp",
+        width: 1200,
+        height: 630,
+        alt: "Dineably Case Studies",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Restaurant Marketing Case Studies (Seattle) | Dineably",
+    description: "Real results: Thai restaurants in Seattle increased orders 300%+ with our websites, SEO & ads. See case studies from Bellevue, Kirkland & Lynnwood.",
   },
 };
 
@@ -92,6 +106,7 @@ export default function CaseStudies() {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
