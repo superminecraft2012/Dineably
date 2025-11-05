@@ -387,6 +387,15 @@ export default function Home() {
             {/* Case 1 */}
             <Link href="/case-studies" className="group">
               <div className="bg-gradient-to-br from-orange-900/20 to-red-900/20 border border-white/10 rounded-lg p-8 hover:border-orange-500/50 transition-all h-full">
+                <div className="flex items-center gap-3 mb-4">
+                  <Image 
+                    src="/partners/ThaprachanLogo.webp" 
+                    alt="Thaprachan Thai restaurant logo" 
+                    width={48} 
+                    height={48}
+                    className="h-12 w-auto"
+                  />
+                </div>
                 <div className="text-xs text-orange-400 font-semibold mb-3 uppercase">Thai Restaurant • Seattle</div>
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-orange-400 transition-colors">
                   Thaprachan Thai
@@ -413,6 +422,15 @@ export default function Home() {
             {/* Case 2 */}
             <Link href="/case-studies/larb-thai-seattle" className="group">
               <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 border border-white/10 rounded-lg p-8 hover:border-orange-500/50 transition-all h-full">
+                <div className="flex items-center gap-3 mb-4">
+                  <Image 
+                    src="/partners/larblogo.webp" 
+                    alt="Larb Thai restaurant logo" 
+                    width={48} 
+                    height={48}
+                    className="h-12 w-auto"
+                  />
+                </div>
                 <div className="text-xs text-red-400 font-semibold mb-3 uppercase">Thai Restaurant • Seattle</div>
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-orange-400 transition-colors">
                   Larb Thai
@@ -439,6 +457,15 @@ export default function Home() {
             {/* Case 3 */}
             <Link href="/case-studies" className="group">
               <div className="bg-gradient-to-br from-orange-900/20 to-red-900/20 border border-white/10 rounded-lg p-8 hover:border-orange-500/50 transition-all h-full">
+                <div className="flex items-center gap-3 mb-4">
+                  <Image 
+                    src="/partners/chadalynnwoodlogo.webp" 
+                    alt="Chada Thai restaurant logo" 
+                    width={48} 
+                    height={48}
+                    className="h-8 w-auto"
+                  />
+                </div>
                 <div className="text-xs text-orange-400 font-semibold mb-3 uppercase">Thai Restaurant • Lynnwood</div>
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-orange-400 transition-colors">
                   Chada Thai
