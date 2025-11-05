@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
@@ -91,29 +92,39 @@ export default function Home() {
           {/* Main Heading */}
           <div className="text-center mb-8 relative z-10">
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
-              Scale <span className="italic font-serif">Reliably</span>,<br />
+              Scale <span className="italic font-serif">Reliably</span><br />
               with <span className="italic font-serif">Dineably</span>
             </h1>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              We partner with successful 6 and 7-figure brands to unlock scalable,<br />
-              profitable growth—helping them break past barriers and scale to 8 figures.
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-6">
+              We turn web traffic into orders with fast sites, local SEO, and ads.
             </p>
           </div>
 
           {/* CTA Buttons - Above the glow */}
-          <div className="flex items-center justify-center gap-4 mb-20 relative z-10">
-            <button className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all flex items-center gap-2 shadow-lg shadow-orange-500/50">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-              I&apos;m Ready To Scale
-            </button>
-            <button className="bg-transparent border border-white/20 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/5 transition-all flex items-center gap-2">
-              Free Case Study
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </button>
+          <div className="flex items-center justify-center gap-4 mb-12 relative z-10">
+            <Link href="#contact">
+              <button className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all flex items-center gap-2 shadow-lg shadow-orange-500/50">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                Book Audit
+              </button>
+            </Link>
+            <Link href="/case-studies">
+              <button className="bg-transparent border border-white/20 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/5 transition-all flex items-center gap-2">
+                See Case Study
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </button>
+            </Link>
+          </div>
+
+          {/* Proof Metrics */}
+          <div className="text-center relative z-10">
+            <p className="text-sm text-gray-400 max-w-2xl mx-auto">
+              Avg site speed &lt;2.5s • +30% median rise in &apos;Order Online&apos; clicks
+            </p>
           </div>
         </div>
 
@@ -187,6 +198,315 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* What We Do Section */}
+      <section className="py-20 bg-gradient-to-b from-black to-gray-900">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              What We <span className="italic font-serif">Do</span>
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              Three core services that drive measurable results for restaurants
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Websites/CRO */}
+            <div className="bg-black border border-white/10 rounded-lg p-8 hover:border-orange-500/50 transition-all">
+              <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-3">Websites & CRO</h3>
+              <p className="text-gray-400 mb-4">
+                Lightning-fast, mobile-optimized sites that convert visitors into customers
+              </p>
+              <ul className="space-y-2 text-sm text-gray-300">
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Sub-2.5s load times increase order completions</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Clear CTAs drive phone calls & online orders</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Menu optimization boosts average order value</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Local SEO & GBP */}
+            <div className="bg-black border border-white/10 rounded-lg p-8 hover:border-orange-500/50 transition-all">
+              <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-3">Local SEO & GBP</h3>
+              <p className="text-gray-400 mb-4">
+                Dominate local search results and Google Business Profile rankings
+              </p>
+              <ul className="space-y-2 text-sm text-gray-300">
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Rank for &quot;[cuisine] near me&quot; searches</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Optimize GBP for more directions & calls</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Review management builds trust & visibility</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Paid Ads */}
+            <div className="bg-black border border-white/10 rounded-lg p-8 hover:border-orange-500/50 transition-all">
+              <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-3">Paid Ads</h3>
+              <p className="text-gray-400 mb-4">
+                Profitable Google & social ads that scale your order volume
+              </p>
+              <ul className="space-y-2 text-sm text-gray-300">
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Google Ads for high-intent &quot;food delivery&quot; searches</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Facebook & Instagram for brand awareness</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <svg className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Retargeting campaigns convert previous visitors</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mini Case Highlights */}
+      <section className="py-20 bg-black">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Real <span className="italic font-serif">Results</span>
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              See how we&apos;ve helped Seattle-area restaurants grow
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Case 1 */}
+            <Link href="/case-studies" className="group">
+              <div className="bg-gradient-to-br from-orange-900/20 to-red-900/20 border border-white/10 rounded-lg p-8 hover:border-orange-500/50 transition-all h-full">
+                <div className="text-xs text-orange-400 font-semibold mb-3 uppercase">Thai Restaurant • Seattle</div>
+                <h3 className="text-2xl font-bold mb-4 group-hover:text-orange-400 transition-colors">
+                  Thaprachan Thai
+                </h3>
+                <div className="space-y-3 mb-6">
+                  <div>
+                    <p className="text-sm text-gray-400 mb-1">Problem</p>
+                    <p className="text-white">Slow website, low Google visibility, declining online orders</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-400 mb-1">90-Day Result</p>
+                    <p className="text-white font-semibold">+45% online orders • 3x Google Maps impressions</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 text-orange-400 text-sm font-semibold">
+                  View Case Study
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </Link>
+
+            {/* Case 2 */}
+            <Link href="/case-studies" className="group">
+              <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 border border-white/10 rounded-lg p-8 hover:border-orange-500/50 transition-all h-full">
+                <div className="text-xs text-red-400 font-semibold mb-3 uppercase">Thai Restaurant • Woodinville</div>
+                <h3 className="text-2xl font-bold mb-4 group-hover:text-orange-400 transition-colors">
+                  Racha Thai
+                </h3>
+                <div className="space-y-3 mb-6">
+                  <div>
+                    <p className="text-sm text-gray-400 mb-1">Problem</p>
+                    <p className="text-white">New location, zero online presence, competing with established spots</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-400 mb-1">90-Day Result</p>
+                    <p className="text-white font-semibold">Top 3 local rankings • 120+ new monthly orders</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 text-orange-400 text-sm font-semibold">
+                  View Case Study
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </Link>
+
+            {/* Case 3 */}
+            <Link href="/case-studies" className="group">
+              <div className="bg-gradient-to-br from-orange-900/20 to-red-900/20 border border-white/10 rounded-lg p-8 hover:border-orange-500/50 transition-all h-full">
+                <div className="text-xs text-orange-400 font-semibold mb-3 uppercase">Thai Restaurant • Lynnwood</div>
+                <h3 className="text-2xl font-bold mb-4 group-hover:text-orange-400 transition-colors">
+                  Chada Thai
+                </h3>
+                <div className="space-y-3 mb-6">
+                  <div>
+                    <p className="text-sm text-gray-400 mb-1">Problem</p>
+                    <p className="text-white">Outdated site, poor mobile experience, losing customers to competitors</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-400 mb-1">90-Day Result</p>
+                    <p className="text-white font-semibold">+52% conversion rate • 40% more phone calls</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 text-orange-400 text-sm font-semibold">
+                  View Case Study
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* GEO Block */}
+      <section className="py-20 bg-gradient-to-b from-black to-gray-900 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Serving Greater <span className="italic font-serif">Seattle</span>
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              Local restaurant marketing expertise across the Puget Sound region
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+            {['Seattle', 'Bellevue', 'Kirkland', 'Redmond', 'Bothell', 'Woodinville', 'Lynnwood', 'Shoreline', 'Edmonds', 'Renton'].map((city) => (
+              <Link 
+                key={city}
+                href={`/${city.toLowerCase()}-restaurant-marketing`}
+                className="px-6 py-3 bg-black border border-white/10 rounded-lg hover:border-orange-500/50 hover:bg-white/5 transition-all text-gray-300 hover:text-white font-medium"
+              >
+                {city}
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-sm text-gray-500">
+              Don&apos;t see your city? We serve restaurants throughout Washington State and beyond.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Preview */}
+      <section className="py-20 bg-black">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Common <span className="italic font-serif">Questions</span>
+            </h2>
+            <p className="text-gray-400">
+              Quick answers to help you get started
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            <div className="border border-white/10 rounded-lg p-6 hover:border-orange-500/50 transition-all">
+              <h3 className="text-xl font-bold mb-3">How long does it take to see results?</h3>
+              <p className="text-gray-400">
+                Website improvements show results within 2-4 weeks. SEO gains momentum in 2-3 months. Paid ads can drive orders within days of launch.
+              </p>
+            </div>
+
+            <div className="border border-white/10 rounded-lg p-6 hover:border-orange-500/50 transition-all">
+              <h3 className="text-xl font-bold mb-3">What makes your restaurant websites fast?</h3>
+              <p className="text-gray-400">
+                We use modern frameworks, optimize images, minimize code, and leverage CDNs. Average load times under 2.5 seconds mean visitors don&apos;t bounce before ordering.
+              </p>
+            </div>
+
+            <div className="border border-white/10 rounded-lg p-6 hover:border-orange-500/50 transition-all">
+              <h3 className="text-xl font-bold mb-3">Do you work with restaurants outside Seattle?</h3>
+              <p className="text-gray-400">
+                Yes! While we specialize in the Seattle area, we work with restaurants throughout Washington State and select markets nationwide.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mt-8">
+            <Link href="/faq" className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-semibold transition-colors">
+              View All FAQs
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* AEO TL;DR Box */}
+      <section className="py-16 bg-gradient-to-b from-black to-gray-900 border-t border-white/10">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="bg-gradient-to-br from-orange-900/10 to-red-900/10 border border-orange-500/30 rounded-lg p-8">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-3">What is Dineably?</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  A restaurant growth partner that builds fast websites and runs local SEO & ads to increase orders in the Seattle area. We specialize in helping Thai, Asian, and local restaurants turn their online presence into a reliable revenue stream.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </main>
   );
