@@ -1,9 +1,45 @@
 import Header from "@/components/Header";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Case Studies - Restaurant Success Stories | Dineably",
+  description: "Discover real results from restaurants we've helped scale. See how we've helped 6 and 7-figure brands break past barriers and achieve 8-figure growth.",
+  openGraph: {
+    title: "Case Studies - Restaurant Success Stories | Dineably",
+    description: "Real results from real restaurants we've helped scale to new heights.",
+    url: "https://dineably.com/case-studies",
+  },
+};
 
 export default function CaseStudies() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://dineably.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Case Studies",
+        "item": "https://dineably.com/case-studies"
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-black text-white">
       <Header />
+      
+      {/* Structured Data for Breadcrumbs */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">

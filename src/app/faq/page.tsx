@@ -1,9 +1,45 @@
 import Header from "@/components/Header";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "FAQ - Frequently Asked Questions | Dineably",
+  description: "Get answers to common questions about working with Dineably. Learn about our services, pricing, process, and how we help restaurants scale reliably.",
+  openGraph: {
+    title: "FAQ - Frequently Asked Questions | Dineably",
+    description: "Get answers to common questions about working with Dineably.",
+    url: "https://dineably.com/faq",
+  },
+};
 
 export default function FAQ() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://dineably.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "FAQ",
+        "item": "https://dineably.com/faq"
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-black text-white">
       <Header />
+      
+      {/* Structured Data for Breadcrumbs */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">

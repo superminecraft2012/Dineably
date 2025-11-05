@@ -1,9 +1,45 @@
 import Header from "@/components/Header";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Why Choose Dineably - What Sets Us Apart | Dineably",
+  description: "Discover what sets Dineably apart in scaling restaurant brands to new heights. Learn about our proven track record, industry expertise, and dedicated support.",
+  openGraph: {
+    title: "Why Choose Dineably - What Sets Us Apart | Dineably",
+    description: "Discover what sets us apart in scaling restaurant brands to new heights.",
+    url: "https://dineably.com/why-us",
+  },
+};
 
 export default function WhyUs() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://dineably.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Why Us",
+        "item": "https://dineably.com/why-us"
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-black text-white">
       <Header />
+      
+      {/* Structured Data for Breadcrumbs */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">

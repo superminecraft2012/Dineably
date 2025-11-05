@@ -1,9 +1,45 @@
 import Header from "@/components/Header";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Services - Restaurant Growth Solutions | Dineably",
+  description: "Comprehensive solutions to scale your restaurant brand reliably. Discover our expert services designed to help restaurants achieve profitable, sustainable growth.",
+  openGraph: {
+    title: "Our Services - Restaurant Growth Solutions | Dineably",
+    description: "Comprehensive solutions to scale your restaurant brand reliably.",
+    url: "https://dineably.com/services",
+  },
+};
 
 export default function Services() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://dineably.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://dineably.com/services"
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-black text-white">
       <Header />
+      
+      {/* Structured Data for Breadcrumbs */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
