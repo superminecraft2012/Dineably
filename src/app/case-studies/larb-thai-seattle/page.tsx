@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title: "Larb Thai Case Study: 250% Order Increase in 90 Days | Dineably",
   description: "How we helped a Seattle Thai restaurant increase online orders by 250% through website optimization, local SEO, and targeted ads in just 90 days.",
   alternates: {
-    canonical: "https://dineably.com/case-studies/larb-seattle",
+    canonical: "https://dineably.com/case-studies/larb-thai-seattle",
   },
   openGraph: {
     title: "Larb Thai Case Study: 250% Order Increase in 90 Days | Dineably",
     description: "250% increase in online orders through website optimization, local SEO, and targeted ads for Seattle Thai restaurant.",
-    url: "https://dineably.com/case-studies/larb-seattle",
+    url: "https://dineably.com/case-studies/larb-thai-seattle",
   },
 };
 
@@ -37,7 +37,7 @@ export default function LarbCaseStudy() {
         "@type": "ListItem",
         "position": 3,
         "name": "Larb Thai",
-        "item": "https://dineably.com/case-studies/larb-seattle"
+        "item": "https://dineably.com/case-studies/larb-thai-seattle"
       }
     ]
   };

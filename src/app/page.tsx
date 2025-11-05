@@ -399,7 +399,7 @@ export default function Home() {
             </Link>
 
             {/* Case 2 */}
-            <Link href="/case-studies/larb-seattle" className="group">
+            <Link href="/case-studies/larb-thai-seattle" className="group">
               <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 border border-white/10 rounded-lg p-8 hover:border-orange-500/50 transition-all h-full">
                 <div className="text-xs text-red-400 font-semibold mb-3 uppercase">Thai Restaurant • Seattle</div>
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-orange-400 transition-colors">

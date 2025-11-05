@@ -162,7 +162,7 @@ export default function SeattleRestaurantMarketing() {
           <h2 className="text-4xl font-bold mb-12 text-center">Seattle Restaurant Success Stories</h2>
           
           <div className="space-y-6">
-            <Link href="/case-studies/thaprachan-seattle">
+            <Link href="/case-studies/thaprachan-thai-seattle">
               <div className="border border-white/10 rounded-lg p-6 hover:border-orange-500/50 transition-all">
                 <div className="flex items-start justify-between mb-4">
                   <div>
