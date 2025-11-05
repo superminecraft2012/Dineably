@@ -221,6 +221,15 @@ export default function SeattleRestaurantMarketing() {
             <Link href="/bothell-restaurant-marketing" className="text-center py-4 px-6 border border-white/10 rounded-lg hover:border-orange-500/50 transition-colors">
               <span className="text-lg">Bothell</span>
             </Link>
+            <Link href="/shoreline-restaurant-marketing" className="text-center py-4 px-6 border border-white/10 rounded-lg hover:border-orange-500/50 transition-colors">
+              <span className="text-lg">Shoreline</span>
+            </Link>
+            <Link href="/edmonds-restaurant-marketing" className="text-center py-4 px-6 border border-white/10 rounded-lg hover:border-orange-500/50 transition-colors">
+              <span className="text-lg">Edmonds</span>
+            </Link>
+            <Link href="/renton-restaurant-marketing" className="text-center py-4 px-6 border border-white/10 rounded-lg hover:border-orange-500/50 transition-colors">
+              <span className="text-lg">Renton</span>
+            </Link>
           </div>
         </div>
       </section>

@@ -27,6 +27,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/lynnwood-restaurant-marketing',
     '/woodinville-restaurant-marketing',
     '/bothell-restaurant-marketing',
+    '/shoreline-restaurant-marketing',
+    '/edmonds-restaurant-marketing',
+    '/renton-restaurant-marketing',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
