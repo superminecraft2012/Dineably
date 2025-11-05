@@ -150,6 +150,18 @@ export default function Home() {
                 <span className="text-lg font-semibold text-gray-300">Thaprachan Thai</span>
               </div>
 
+              {/* Racha Thai */}
+              <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
+                <Image 
+                  src="/partners/RachaThaiWoodinvilleLogoBestThaiRestaurant.webp" 
+                  alt="Racha Thai Woodinville logo - Thai restaurant marketing partner" 
+                  width={60} 
+                  height={60}
+                  className="h-12 w-auto"
+                />
+                <span className="text-lg font-semibold text-gray-300">Racha Thai</span>
+              </div>
+
               {/* Larb Thai */}
               <div className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity">
                 <Image 
