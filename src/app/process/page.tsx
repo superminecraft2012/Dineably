@@ -169,7 +169,7 @@ export default function Process() {
               </div>
             </div>
           </div>
-
+          
           {/* Step 2: Strategy */}
           <div id="strategy" className="flex gap-8 items-start scroll-mt-24">
             <div className="flex-shrink-0 w-20 h-20 rounded-full bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center text-3xl font-bold shadow-lg shadow-orange-500/30">
@@ -212,7 +212,7 @@ export default function Process() {
               </div>
             </div>
           </div>
-
+          
           {/* Step 3: Implementation */}
           <div id="implementation" className="flex gap-8 items-start scroll-mt-24">
             <div className="flex-shrink-0 w-20 h-20 rounded-full bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center text-3xl font-bold shadow-lg shadow-orange-500/30">
@@ -255,7 +255,7 @@ export default function Process() {
               </div>
             </div>
           </div>
-
+          
           {/* Step 4: Optimization */}
           <div id="optimization" className="flex gap-8 items-start scroll-mt-24">
             <div className="flex-shrink-0 w-20 h-20 rounded-full bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center text-3xl font-bold shadow-lg shadow-orange-500/30">

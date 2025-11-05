@@ -70,6 +70,41 @@ export default function Services() {
         </div>
       </section>
 
+      {/* TL;DR Block - Above the fold */}
+      <section className="py-12 bg-gradient-to-b from-black to-gray-900 border-y border-white/10">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="bg-gradient-to-br from-orange-900/10 to-red-900/10 border border-orange-500/30 rounded-lg p-8">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold mb-3">TL;DR: What We Do</h2>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  We build sub-2.5s restaurant websites, optimize your Google Business Profile to rank in the local 3-pack, and run geo-targeted Google & Meta ads during peak dining hours. All services include closed-loop tracking that ties orders back to specific campaigns, so you know exactly what's working.
+                </p>
+                <div className="flex flex-wrap gap-4 text-sm">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                    <span>2-4 week website launch</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                    <span>4-6 month SEO results</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                    <span>Same-day ad launches</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Sections */}
       <section className="max-w-7xl mx-auto px-6 py-16">
         <div className="space-y-20">
@@ -588,20 +623,156 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Packages Section */}
+      {/* Packages Section - Table Format for AEO */}
       <section className="py-20 bg-gradient-to-b from-black to-gray-900 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               Choose Your <span className="italic font-serif">Package</span>
             </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-400 max-w-2xl mx-auto mb-8">
               Flexible solutions designed for restaurants at every stage of growth
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Launch Package */}
+          {/* Responsive Table */}
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse bg-black border border-white/10 rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-gradient-to-r from-orange-900/20 to-red-900/20">
+                  <th className="px-6 py-4 text-left text-sm font-bold text-white border-b border-white/10">Feature</th>
+                  <th className="px-6 py-4 text-center text-sm font-bold text-white border-b border-l border-white/10">
+                    <div className="mb-1">Launch</div>
+                    <div className="text-xs text-orange-400 font-normal">For New Restaurants</div>
+                  </th>
+                  <th className="px-6 py-4 text-center text-sm font-bold text-white border-b border-l border-white/10 bg-orange-500/10">
+                    <div className="mb-1">Grow ⭐</div>
+                    <div className="text-xs text-orange-400 font-normal">Most Popular</div>
+                  </th>
+                  <th className="px-6 py-4 text-center text-sm font-bold text-white border-b border-l border-white/10">
+                    <div className="mb-1">Scale</div>
+                    <div className="text-xs text-orange-400 font-normal">Multi-Location</div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="text-sm">
+                <tr>
+                  <td className="px-6 py-3 text-white font-semibold border-b border-white/10">Pricing</td>
+                  <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10">
+                    <div className="font-bold text-white">$3,500</div>
+                    <div className="text-xs text-gray-500">+ $1,500/mo</div>
+                  </td>
+                  <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10 bg-orange-500/5">
+                    <div className="font-bold text-white">$5,000</div>
+                    <div className="text-xs text-gray-500">+ $2,500/mo</div>
+                  </td>
+                  <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10">
+                    <div className="font-bold text-white">Custom</div>
+                    <div className="text-xs text-gray-500">Contact us</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-3 text-white font-semibold border-b border-white/10">Timeline</td>
+                  <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10">3-4 weeks</td>
+                  <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10 bg-orange-500/5">4-6 weeks</td>
+                  <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10">6-8 weeks</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-3 text-gray-300 border-b border-white/10">Responsive Website</td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10">
+                    <span className="text-orange-500">✓</span> 5 pages
+                  </td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10 bg-orange-500/5">
+                    <span className="text-orange-500">✓</span> 10 pages
+                  </td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10">
+                    <span className="text-orange-500">✓</span> Unlimited
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-3 text-gray-300 border-b border-white/10">Google Business Profile Setup</td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10"><span className="text-orange-500">✓</span></td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10 bg-orange-500/5"><span className="text-orange-500">✓</span></td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10"><span className="text-orange-500">✓</span></td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-3 text-gray-300 border-b border-white/10">Local SEO</td>
+                  <td className="px-6 py-3 text-center text-gray-400 border-b border-l border-white/10">Basic</td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10 bg-orange-500/5"><span className="text-orange-500">✓</span> Advanced</td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10"><span className="text-orange-500">✓</span> Enterprise</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-3 text-gray-300 border-b border-white/10">Google Ads Management</td>
+                  <td className="px-6 py-3 text-center text-gray-500 border-b border-l border-white/10">—</td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10 bg-orange-500/5"><span className="text-orange-500">✓</span> $1.5k/mo spend</td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10"><span className="text-orange-500">✓</span> $5k+/mo spend</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-3 text-gray-300 border-b border-white/10">Facebook & Instagram Ads</td>
+                  <td className="px-6 py-3 text-center text-gray-500 border-b border-l border-white/10">—</td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10 bg-orange-500/5"><span className="text-orange-500">✓</span></td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10"><span className="text-orange-500">✓</span></td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-3 text-gray-300 border-b border-white/10">Professional Photography</td>
+                  <td className="px-6 py-3 text-center text-gray-500 border-b border-l border-white/10">—</td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10 bg-orange-500/5"><span className="text-orange-500">✓</span> 10 dishes</td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10"><span className="text-orange-500">✓</span> 20+ dishes</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-3 text-gray-300 border-b border-white/10">Video Production</td>
+                  <td className="px-6 py-3 text-center text-gray-500 border-b border-l border-white/10">—</td>
+                  <td className="px-6 py-3 text-center text-gray-500 border-b border-l border-white/10 bg-orange-500/5">—</td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10"><span className="text-orange-500">✓</span> Reels & ads</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-3 text-gray-300 border-b border-white/10">Call Tracking & Analytics</td>
+                  <td className="px-6 py-3 text-center text-gray-400 border-b border-l border-white/10">Basic</td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10 bg-orange-500/5"><span className="text-orange-500">✓</span> Full tracking</td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10"><span className="text-orange-500">✓</span> Multi-location</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-3 text-gray-300 border-b border-white/10">Monthly Reports</td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10"><span className="text-orange-500">✓</span></td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10 bg-orange-500/5"><span className="text-orange-500">✓</span> + Weekly updates</td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10"><span className="text-orange-500">✓</span> + Real-time dashboard</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-3 text-gray-300">Dedicated Account Manager</td>
+                  <td className="px-6 py-3 text-center text-gray-500 border-l border-white/10">—</td>
+                  <td className="px-6 py-3 text-center text-gray-500 border-l border-white/10 bg-orange-500/5">—</td>
+                  <td className="px-6 py-3 text-center border-l border-white/10"><span className="text-orange-500">✓</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="grid md:grid-cols-3 gap-6 mt-12">
+            {/* Launch CTA */}
+            <Link href="#contact">
+              <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all shadow-lg">
+                Get Started with Launch
+              </button>
+            </Link>
+            
+            {/* Grow CTA */}
+            <Link href="#contact">
+              <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all shadow-lg shadow-orange-500/50">
+                Get Started with Grow ⭐
+              </button>
+            </Link>
+            
+            {/* Scale CTA */}
+            <Link href="#contact">
+              <button className="w-full bg-transparent border-2 border-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-500/10 transition-all">
+                Contact for Scale Package
+              </button>
+            </Link>
+          </div>
+
+          {/* Keep original cards for mobile fallback */}
+          <div className="hidden">
             <div className="bg-black border border-white/10 rounded-lg p-8 hover:border-orange-500/50 transition-all">
               <div className="text-sm text-orange-400 font-semibold mb-2 uppercase">For New Restaurants</div>
               <h3 className="text-3xl font-bold mb-2">Launch</h3>

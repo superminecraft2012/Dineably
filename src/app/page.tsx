@@ -103,20 +103,20 @@ export default function Home() {
           {/* CTA Buttons - Above the glow */}
           <div className="flex items-center justify-center gap-4 mb-12 relative z-10">
             <Link href="#contact">
-              <button className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all flex items-center gap-2 shadow-lg shadow-orange-500/50">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <button className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all flex items-center gap-2 shadow-lg shadow-orange-500/50">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
+              </svg>
                 Book Audit
-              </button>
+            </button>
             </Link>
             <Link href="/case-studies">
-              <button className="bg-transparent border border-white/20 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/5 transition-all flex items-center gap-2">
+            <button className="bg-transparent border border-white/20 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/5 transition-all flex items-center gap-2">
                 See Case Study
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </button>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </button>
             </Link>
           </div>
 
@@ -195,6 +195,60 @@ export default function Home() {
                 <span className="text-lg font-semibold text-gray-300">Emerald Thai</span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AEO Definition Snippets - Above the fold */}
+      <section className="py-16 bg-black border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-3 gap-6">
+            
+            {/* Definition 1 */}
+            <div className="bg-gradient-to-br from-gray-900 to-black border border-white/10 rounded-lg p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 bg-orange-500/20 rounded-lg flex items-center justify-center">
+                  <svg className="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="font-bold text-white">What is local SEO for restaurants?</h3>
+              </div>
+              <p className="text-sm text-gray-400 leading-relaxed">
+                Local SEO helps restaurants appear in "near me" searches and Google Maps results. It includes optimizing your Google Business Profile, managing reviews, building local citations, and targeting location-specific keywords like "Thai food Seattle" to capture customers actively searching for nearby dining options.
+              </p>
+            </div>
+
+            {/* Definition 2 */}
+            <div className="bg-gradient-to-br from-gray-900 to-black border border-white/10 rounded-lg p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 bg-orange-500/20 rounded-lg flex items-center justify-center">
+                  <svg className="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  </svg>
+                </div>
+                <h3 className="font-bold text-white">What is GBP?</h3>
+              </div>
+              <p className="text-sm text-gray-400 leading-relaxed">
+                Google Business Profile (GBP) is your restaurant's free listing on Google Search and Maps. A fully optimized GBP with photos, posts, reviews, and accurate hours helps you rank in the local 3-pack and converts searchers into diners by showing menus, directions, and real-time order buttons.
+              </p>
+            </div>
+
+            {/* Definition 3 */}
+            <div className="bg-gradient-to-br from-gray-900 to-black border border-white/10 rounded-lg p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 bg-orange-500/20 rounded-lg flex items-center justify-center">
+                  <svg className="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="font-bold text-white">What is dayparting?</h3>
+              </div>
+              <p className="text-sm text-gray-400 leading-relaxed">
+                Dayparting is scheduling ads to run during specific hours when your restaurant is busiest or has capacity. For example, targeting lunch ads from 11am-1pm or dinner ads from 5pm-8pm maximizes ROI by reaching customers when they're actively deciding where to eat, not at midnight when you're closed.
+              </p>
+            </div>
+
           </div>
         </div>
       </section>
