@@ -99,7 +99,7 @@ export default function Home() {
               with <span className="italic font-serif">Dineably</span>
             </h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-6">
-              We turn web traffic into orders with fast sites, local SEO, and ads.
+              We build fast restaurant websites and run local SEO & ads that turn visits into orders.
             </p>
           </div>
 
@@ -473,7 +473,7 @@ export default function Home() {
               Serving Greater <span className="italic font-serif">Seattle</span>
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Local restaurant marketing expertise across the Puget Sound region
+              Serving Greater Seattle—Seattle, Bellevue, Kirkland, Redmond, Bothell, Woodinville, Lynnwood, Shoreline, Edmonds, Renton.
             </p>
           </div>
 
@@ -554,9 +554,9 @@ export default function Home() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-3">What is Dineably?</h3>
+                <h3 className="text-2xl font-bold mb-3">What does Dineably do?</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  A restaurant growth partner that builds fast websites and runs local SEO & ads to increase orders in the Seattle area. We specialize in helping Thai, Asian, and local restaurants turn their online presence into a reliable revenue stream.
+                  Dineably builds fast restaurant websites and runs local SEO and ads that increase orders and reservations in the Seattle area.
                 </p>
               </div>
             </div>
