@@ -662,34 +662,34 @@ export default function Services() {
                 <tr>
                   <td className="px-6 py-3 text-white font-semibold border-b border-white/10">Pricing</td>
                   <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10">
-                    <div className="font-bold text-white">$3,500</div>
-                    <div className="text-xs text-gray-500">+ $1,500/mo</div>
+                    <div className="font-bold text-white">$495</div>
+                    <div className="text-xs text-gray-500">+ $199/mo</div>
                   </td>
                   <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10 bg-orange-500/5">
-                    <div className="font-bold text-white">$5,000</div>
-                    <div className="text-xs text-gray-500">+ $2,500/mo</div>
+                    <div className="font-bold text-white">$995</div>
+                    <div className="text-xs text-gray-500">+ $499/mo</div>
                   </td>
                   <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10">
-                    <div className="font-bold text-white">Custom</div>
-                    <div className="text-xs text-gray-500">Contact us</div>
+                    <div className="font-bold text-white">$4,999</div>
+                    <div className="text-xs text-gray-500">+ $1,499/mo</div>
                   </td>
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-white font-semibold border-b border-white/10">Timeline</td>
+                  <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10">3-5 days</td>
+                  <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10 bg-orange-500/5">7-10 days</td>
                   <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10">3-4 weeks</td>
-                  <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10 bg-orange-500/5">4-6 weeks</td>
-                  <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10">6-8 weeks</td>
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-gray-300 border-b border-white/10">Responsive Website</td>
                   <td className="px-6 py-3 text-center border-b border-l border-white/10">
-                    <span className="text-orange-500">✓</span> 5 pages
+                    <span className="text-orange-500">✓</span> up to 5 pages
                   </td>
                   <td className="px-6 py-3 text-center border-b border-l border-white/10 bg-orange-500/5">
-                    <span className="text-orange-500">✓</span> 10 pages
+                    <span className="text-orange-500">✓</span> up to 10 pages
                   </td>
                   <td className="px-6 py-3 text-center border-b border-l border-white/10">
-                    <span className="text-orange-500">✓</span> Unlimited
+                    <span className="text-orange-500">✓</span> up to 25
                   </td>
                 </tr>
                 <tr>
@@ -707,8 +707,8 @@ export default function Services() {
                 <tr>
                   <td className="px-6 py-3 text-gray-300 border-b border-white/10">Google Ads Management</td>
                   <td className="px-6 py-3 text-center text-gray-500 border-b border-l border-white/10">—</td>
-                  <td className="px-6 py-3 text-center border-b border-l border-white/10 bg-orange-500/5"><span className="text-orange-500">✓</span> $1.5k/mo spend</td>
-                  <td className="px-6 py-3 text-center border-b border-l border-white/10"><span className="text-orange-500">✓</span> $5k+/mo spend</td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10 bg-orange-500/5"><span className="text-orange-500">✓</span></td>
+                  <td className="px-6 py-3 text-center border-b border-l border-white/10"><span className="text-orange-500">✓</span></td>
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-gray-300 border-b border-white/10">Facebook & Instagram Ads</td>
@@ -742,8 +742,8 @@ export default function Services() {
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-gray-300">Dedicated Account Manager</td>
-                  <td className="px-6 py-3 text-center text-gray-500 border-l border-white/10">—</td>
-                  <td className="px-6 py-3 text-center text-gray-500 border-l border-white/10 bg-orange-500/5">—</td>
+                  <td className="px-6 py-3 text-center border-l border-white/10"><span className="text-orange-500">✓</span></td>
+                  <td className="px-6 py-3 text-center border-l border-white/10 bg-orange-500/5"><span className="text-orange-500">✓</span></td>
                   <td className="px-6 py-3 text-center border-l border-white/10"><span className="text-orange-500">✓</span></td>
                 </tr>
               </tbody>
@@ -769,7 +769,7 @@ export default function Services() {
             {/* Scale CTA */}
             <Link href="#contact">
               <button className="w-full bg-transparent border-2 border-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-500/10 transition-all">
-                Contact for Scale Package
+                Get Started with Scale
               </button>
             </Link>
           </div>
