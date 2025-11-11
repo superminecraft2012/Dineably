@@ -1,36 +1,14 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Restaurant Websites, Local SEO & Ads (Seattle) | Dineably",
-  description: "Dineably builds fast restaurant sites, local SEO, and ads that turn visits into orders. Serving Seattle, Bellevue, Kirkland, Redmond, Lynnwood.",
-  alternates: {
-    canonical: "https://dineably.com",
-  },
-  openGraph: {
-    title: "Restaurant Websites, Local SEO & Ads (Seattle) | Dineably",
-    description: "Dineably builds fast restaurant sites, local SEO, and ads that turn visits into orders. Serving Seattle, Bellevue, Kirkland, Redmond, Lynnwood.",
-    url: "https://dineably.com",
-    images: [
-      {
-        url: "https://dineably.com/logo-with-text.webp",
-        width: 1200,
-        height: 630,
-        alt: "Dineably Restaurant Marketing",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Restaurant Websites, Local SEO & Ads (Seattle) | Dineably",
-    description: "Dineably builds fast restaurant sites, local SEO, and ads that turn visits into orders. Serving Seattle, Bellevue, Kirkland, Redmond, Lynnwood.",
-  },
-};
+import ContactFormModal from "@/components/ContactForm";
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -50,7 +28,8 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <Header />
+      <Header onOpenModal={() => setIsModalOpen(true)} />
+      <ContactFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
@@ -105,14 +84,15 @@ export default function Home() {
 
           {/* CTA Buttons - Above the glow */}
           <div className="flex items-center justify-center gap-4 mb-12 relative z-10">
-            <Link href="#contact">
-            <button className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all flex items-center gap-2 shadow-lg shadow-orange-500/50">
+            <button 
+              onClick={() => setIsModalOpen(true)}
+              className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all flex items-center gap-2 shadow-lg shadow-orange-500/50"
+            >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
                 Book Audit
             </button>
-            </Link>
             <Link href="/case-studies">
             <button className="bg-transparent border border-white/20 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/5 transition-all flex items-center gap-2">
                 See Case Study

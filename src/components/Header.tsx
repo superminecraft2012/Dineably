@@ -4,7 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function Header() {
+interface HeaderProps {
+  onOpenModal?: () => void;
+}
+
+export default function Header({ onOpenModal }: HeaderProps) {
   const pathname = usePathname();
 
   return (
@@ -64,11 +68,12 @@ export default function Header() {
           </nav>
 
           {/* CTA Button */}
-          <Link href="#contact">
-            <button className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-2.5 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all shadow-lg shadow-orange-500/30 whitespace-nowrap">
-              Free 15-Minute Audit
-            </button>
-          </Link>
+          <button 
+            onClick={onOpenModal}
+            className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-2.5 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all shadow-lg shadow-orange-500/30 whitespace-nowrap"
+          >
+            Free 15-Minute Audit
+          </button>
         </div>
       </div>
     </header>
