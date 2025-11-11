@@ -27,7 +27,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
-.env
+# Note: .env is committed for Coolify deployment (private repo only)
 
 # vercel
 .vercel
