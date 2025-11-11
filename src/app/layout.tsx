@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Analytics from "@/components/Analytics";
+import { ModalProvider } from "@/components/ModalProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -144,7 +145,9 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Analytics />
-        {children}
+        <ModalProvider>
+          {children}
+        </ModalProvider>
       </body>
     </html>
   );

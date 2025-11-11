@@ -3,13 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useModal } from "./ModalProvider";
 
-interface HeaderProps {
-  onOpenModal?: () => void;
-}
-
-export default function Header({ onOpenModal }: HeaderProps) {
+export default function Header() {
   const pathname = usePathname();
+  const { openModal } = useModal();
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/95 backdrop-blur-sm">
@@ -69,7 +67,7 @@ export default function Header({ onOpenModal }: HeaderProps) {
 
           {/* CTA Button */}
           <button 
-            onClick={onOpenModal}
+            onClick={openModal}
             className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-2.5 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all shadow-lg shadow-orange-500/30 whitespace-nowrap"
           >
             Free 15-Minute Audit
