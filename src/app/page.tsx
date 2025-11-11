@@ -6,6 +6,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactFormModal from "@/components/ContactForm";
+import type { Metadata } from "next";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);

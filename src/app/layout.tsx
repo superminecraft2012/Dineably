@@ -57,6 +57,13 @@ export default function RootLayout({
       "addressRegion": "WA",
       "addressCountry": "US"
     },
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+1-425-420-7090",
+      "contactType": "Customer Service",
+      "areaServed": "US",
+      "availableLanguage": "English"
+    }],
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": [
@@ -109,12 +116,30 @@ export default function RootLayout({
     ]
   };
 
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://dineably.com",
+    "name": "Dineably",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://dineably.com/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="https://dineably.com/logo.webp" />
+        <link rel="apple-touch-icon" href="https://dineably.com/logo.webp" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body className={inter.className}>

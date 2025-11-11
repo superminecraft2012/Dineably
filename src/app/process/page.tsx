@@ -4,13 +4,13 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our 4-Step Restaurant Marketing Process (Seattle) | Dineably",
+  title: "Our Restaurant Marketing Process Seattle | Dineably",
   description: "Proven process: audit, strategy, launch, optimize. We build fast websites, rank restaurants on Google & run profitable ads in Seattle & surrounding areas.",
   alternates: {
     canonical: "https://dineably.com/process",
   },
   openGraph: {
-    title: "Our 4-Step Restaurant Marketing Process (Seattle) | Dineably",
+    title: "Our Restaurant Marketing Process Seattle | Dineably",
     description: "Proven process: audit, strategy, launch, optimize. We build fast websites, rank restaurants on Google & run profitable ads in Seattle & surrounding areas.",
     url: "https://dineably.com/process",
     images: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Our 4-Step Restaurant Marketing Process (Seattle) | Dineably",
+    title: "Our Restaurant Marketing Process Seattle | Dineably",
     description: "Proven process: audit, strategy, launch, optimize. We build fast websites, rank restaurants on Google & run profitable ads in Seattle & surrounding areas.",
   },
 };

@@ -4,13 +4,13 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Restaurant Website Design, SEO & Advertising Services | Dineably",
+  title: "Restaurant Marketing Services Seattle | Dineably",
   description: "Full-service restaurant marketing in Seattle: custom websites, local SEO, Google Ads & social media for restaurants in Bellevue, Kirkland, Redmond.",
   alternates: {
     canonical: "https://dineably.com/services",
   },
   openGraph: {
-    title: "Restaurant Website Design, SEO & Advertising Services | Dineably",
+    title: "Restaurant Marketing Services Seattle | Dineably",
     description: "Full-service restaurant marketing in Seattle: custom websites, local SEO, Google Ads & social media for restaurants in Bellevue, Kirkland, Redmond.",
     url: "https://dineably.com/services",
     images: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Restaurant Website Design, SEO & Advertising Services | Dineably",
+    title: "Restaurant Marketing Services Seattle | Dineably",
     description: "Full-service restaurant marketing in Seattle: custom websites, local SEO, Google Ads & social media for restaurants in Bellevue, Kirkland, Redmond.",
   },
 };

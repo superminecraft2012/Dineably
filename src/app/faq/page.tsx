@@ -3,13 +3,13 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Restaurant Marketing FAQ - Pricing, Timeline, Results | Dineably",
+  title: "Restaurant Marketing FAQ Seattle | Dineably",
   description: "Common questions about restaurant websites, SEO & ads in Seattle. Learn about pricing, timelines, and what to expect from Dineably's services.",
   alternates: {
     canonical: "https://dineably.com/faq",
   },
   openGraph: {
-    title: "Restaurant Marketing FAQ - Pricing, Timeline, Results | Dineably",
+    title: "Restaurant Marketing FAQ Seattle | Dineably",
     description: "Common questions about restaurant websites, SEO & ads in Seattle. Learn about pricing, timelines, and what to expect from Dineably's services.",
     url: "https://dineably.com/faq",
     images: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Restaurant Marketing FAQ - Pricing, Timeline, Results | Dineably",
+    title: "Restaurant Marketing FAQ Seattle | Dineably",
     description: "Common questions about restaurant websites, SEO & ads in Seattle. Learn about pricing, timelines, and what to expect from Dineably's services.",
   },
 };

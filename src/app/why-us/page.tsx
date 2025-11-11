@@ -4,13 +4,13 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Why Choose Us - Restaurant Marketing Experts (Seattle) | Dineably",
+  title: "Why Dineably - Restaurant Marketing Experts Seattle",
   description: "Proven restaurant marketing agency in Seattle specializing in websites, SEO & ads. 65+ brands scaled. Fast results for Thai, Asian & local restaurants.",
   alternates: {
     canonical: "https://dineably.com/why-us",
   },
   openGraph: {
-    title: "Why Choose Us - Restaurant Marketing Experts (Seattle) | Dineably",
+    title: "Why Dineably - Restaurant Marketing Experts Seattle",
     description: "Proven restaurant marketing agency in Seattle specializing in websites, SEO & ads. 65+ brands scaled. Fast results for Thai, Asian & local restaurants.",
     url: "https://dineably.com/why-us",
     images: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Why Choose Us - Restaurant Marketing Experts (Seattle) | Dineably",
+    title: "Why Dineably - Restaurant Marketing Experts Seattle",
     description: "Proven restaurant marketing agency in Seattle specializing in websites, SEO & ads. 65+ brands scaled. Fast results for Thai, Asian & local restaurants.",
   },
 };
