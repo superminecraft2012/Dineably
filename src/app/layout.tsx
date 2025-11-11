@@ -109,8 +109,8 @@ export default function RootLayout({
       }
     ],
     "sameAs": [
-      "https://www.facebook.com/dineably",
-      "https://www.instagram.com/dineably",
+      "https://www.facebook.com/profile.php?id=61583398440331",
+      "https://www.instagram.com/godineably",
       "https://www.linkedin.com/company/dineably",
       "https://twitter.com/dineably"
     ]

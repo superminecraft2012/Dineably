@@ -120,7 +120,7 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
             <div className="flex flex-col space-y-3">
               <a 
-                href="https://www.facebook.com/dineably" 
+                href="https://www.facebook.com/profile.php?id=61583398440331" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"
@@ -131,7 +131,7 @@ export default function Footer() {
                 Facebook
               </a>
               <a 
-                href="https://www.instagram.com/dineably" 
+                href="https://www.instagram.com/godineably" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"
