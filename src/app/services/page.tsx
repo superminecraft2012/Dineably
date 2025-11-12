@@ -639,9 +639,9 @@ export default function Services() {
           </div>
 
           {/* Responsive Table */}
-          <div className="overflow-x-auto relative pt-14">
+          <div className="overflow-x-auto overflow-y-visible relative pt-16">
             {/* Most Popular Badge - Positioned above Grow column */}
-            <div className="absolute left-[62.5%] -translate-x-1/2 top-0 z-10">
+            <div className="absolute left-[68%] -translate-x-1/2 -top-2 z-10">
               <div className="animate-bounce [animation-duration:2s] bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap shadow-lg shadow-orange-500/50">
                 Most Popular
               </div>
