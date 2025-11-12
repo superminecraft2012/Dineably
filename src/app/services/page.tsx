@@ -639,14 +639,7 @@ export default function Services() {
           </div>
 
           {/* Responsive Table */}
-          <div className="overflow-x-auto overflow-y-visible relative pt-16">
-            {/* Most Popular Badge - Positioned above Grow column */}
-            <div className="absolute left-[68%] -translate-x-1/2 -top-2 z-10">
-              <div className="animate-bounce [animation-duration:2s] bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap shadow-lg shadow-orange-500/50">
-                Most Popular
-              </div>
-            </div>
-            
+          <div className="overflow-x-auto overflow-y-visible">
             <table className="w-full border-collapse bg-black border border-white/10 rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-gradient-to-r from-orange-900/20 to-red-900/20">
@@ -655,7 +648,13 @@ export default function Services() {
                     <div className="text-lg font-bold text-white mb-1">Launch</div>
                     <div className="text-xs text-gray-400 font-normal">For New Restaurants</div>
                   </th>
-                  <th className="px-6 py-5 text-center border-b border-l border-white/10 bg-orange-500/10">
+                  <th className="px-6 py-5 text-center border-b border-l border-white/10 bg-orange-500/10 relative">
+                    {/* Most Popular Badge - Dynamically positioned above this column */}
+                    <div className="absolute left-1/2 -translate-x-1/2 -top-14 z-10">
+                      <div className="animate-bounce [animation-duration:2s] bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap shadow-lg shadow-orange-500/50">
+                        Most Popular
+                      </div>
+                    </div>
                     <div className="text-lg font-bold text-white mb-1">Grow</div>
                     <div className="text-xs text-gray-400 font-normal">Best Value</div>
                   </th>
