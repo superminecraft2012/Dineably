@@ -75,13 +75,13 @@ export default function Home() {
               Scale <span className="italic font-serif">Reliably</span><br />
               with <span className="italic font-serif">Dineably</span>
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-6 px-4">
+            <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-6 px-4 sm:px-0">
               We build fast restaurant websites and run local SEO & ads that turn visits into orders.
             </p>
           </div>
 
           {/* CTA Buttons - Above the glow */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-12 relative z-10 px-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-12 relative z-10 px-4 sm:px-0">
             <button 
               onClick={openModal}
               className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all flex items-center justify-center gap-2 shadow-lg shadow-orange-500/50"
@@ -112,7 +112,7 @@ export default function Home() {
         {/* Partner Logos Section */}
         <div className="border-t border-white/10">
           <div className="max-w-7xl mx-auto px-6 py-16">
-            <p className="text-center text-sm text-gray-400 mb-8 sm:mb-12">Some of our happy partners:</p>
+            <p className="text-center text-sm text-gray-400 mb-12">Some of our happy partners:</p>
             
             {/* Logos Grid */}
             <div className="flex items-center justify-center flex-wrap gap-4 sm:gap-6 md:gap-12 lg:gap-16">
@@ -237,7 +237,7 @@ export default function Home() {
       {/* What We Do Section */}
       <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12 sm:mb-16">
+          <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               What We <span className="italic font-serif">Do</span>
             </h2>
@@ -352,7 +352,7 @@ export default function Home() {
       {/* Mini Case Highlights */}
       <section className="py-12 sm:py-16 md:py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12 sm:mb-16">
+          <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Real <span className="italic font-serif">Results</span>
             </h2>
@@ -473,7 +473,7 @@ export default function Home() {
       {/* GEO Block */}
       <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-black to-gray-900 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-8 sm:mb-12">
+          <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Serving Greater <span className="italic font-serif">Seattle</span>
             </h2>
@@ -505,7 +505,7 @@ export default function Home() {
       {/* FAQ Preview */}
       <section className="py-12 sm:py-16 md:py-20 bg-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-8 sm:mb-12">
+          <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Common <span className="italic font-serif">Questions</span>
             </h2>
@@ -516,21 +516,21 @@ export default function Home() {
 
           <div className="space-y-4">
             <div className="border border-white/10 rounded-lg p-4 sm:p-6 hover:border-orange-500/50 transition-all">
-              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">How long does it take to see results?</h3>
+              <h3 className="text-lg sm:text-xl font-bold mb-3">How long does it take to see results?</h3>
               <p className="text-sm sm:text-base text-gray-400">
                 Website improvements show results within 2-4 weeks. SEO gains momentum in 2-3 months. Paid ads can drive orders within days of launch.
               </p>
             </div>
 
             <div className="border border-white/10 rounded-lg p-4 sm:p-6 hover:border-orange-500/50 transition-all">
-              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">What makes your restaurant websites fast?</h3>
+              <h3 className="text-lg sm:text-xl font-bold mb-3">What makes your restaurant websites fast?</h3>
               <p className="text-sm sm:text-base text-gray-400">
                 We use modern frameworks, optimize images, minimize code, and leverage CDNs. Average load times under 2.5 seconds mean visitors don&apos;t bounce before ordering.
               </p>
             </div>
 
             <div className="border border-white/10 rounded-lg p-4 sm:p-6 hover:border-orange-500/50 transition-all">
-              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Do you work with restaurants outside Seattle?</h3>
+              <h3 className="text-lg sm:text-xl font-bold mb-3">Do you work with restaurants outside Seattle?</h3>
               <p className="text-sm sm:text-base text-gray-400">
                 Yes! While we specialize in the Seattle area, we work with restaurants throughout Washington State and select markets nationwide.
               </p>
@@ -559,7 +559,7 @@ export default function Home() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3">What does Dineably do?</h3>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3">What does Dineably do?</h3>
                 <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
                   Dineably builds fast restaurant websites and runs local SEO and ads that increase orders and reservations in the Seattle area.
                 </p>
