@@ -639,8 +639,8 @@ export default function Services() {
           </div>
 
           {/* Responsive Table */}
-          <div className="overflow-x-auto overflow-y-visible">
-            <table className="w-full border-collapse bg-black border border-white/10 rounded-lg overflow-hidden">
+          <div className="overflow-x-auto overflow-y-visible pt-16">
+            <table className="w-full border-collapse bg-black border border-white/10 rounded-lg">
               <thead>
                 <tr className="bg-gradient-to-r from-orange-900/20 to-red-900/20">
                   <th className="px-6 py-5 text-left text-sm font-bold text-white border-b border-white/10">Feature</th>
