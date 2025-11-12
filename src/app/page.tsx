@@ -193,9 +193,9 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-sm sm:text-base font-bold text-white">What is local SEO for restaurants?</h3>
+                <h3 className="font-bold text-white">What is local SEO for restaurants?</h3>
               </div>
-              <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
+              <p className="text-sm text-gray-400 leading-relaxed">
                 Local SEO helps restaurants appear in "near me" searches and Google Maps results. It includes optimizing your Google Business Profile, managing reviews, building local citations, and targeting location-specific keywords like "Thai food Seattle" to capture customers actively searching for nearby dining options.
               </p>
             </div>
@@ -208,9 +208,9 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   </svg>
                 </div>
-                <h3 className="text-sm sm:text-base font-bold text-white">What is GBP?</h3>
+                <h3 className="font-bold text-white">What is GBP?</h3>
               </div>
-              <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
+              <p className="text-sm text-gray-400 leading-relaxed">
                 Google Business Profile (GBP) is your restaurant's free listing on Google Search and Maps. A fully optimized GBP with photos, posts, reviews, and accurate hours helps you rank in the local 3-pack and converts searchers into diners by showing menus, directions, and real-time order buttons.
               </p>
             </div>
@@ -223,9 +223,9 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-sm sm:text-base font-bold text-white">What is dayparting?</h3>
+                <h3 className="font-bold text-white">What is dayparting?</h3>
               </div>
-              <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
+              <p className="text-sm text-gray-400 leading-relaxed">
                 Dayparting is scheduling ads to run during specific hours when your restaurant is busiest or has capacity. For example, targeting lunch ads from 11am-1pm or dinner ads from 5pm-8pm maximizes ROI by reaching customers when they're actively deciding where to eat, not at midnight when you're closed.
               </p>
             </div>
