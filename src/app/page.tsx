@@ -26,11 +26,11 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Count-up animation for social proof
+  // Count-up animation for social proof (city coverage)
   useEffect(() => {
-    const targetCount = 12;
+    const targetCount = 10;
     const duration = 800; // ms
-    const steps = 30;
+    const steps = 20;
     const increment = targetCount / steps;
     const stepDuration = duration / steps;
     
@@ -146,7 +146,7 @@ export default function Home() {
           {/* Social Proof Count-Up - Near CTA */}
           <div className="text-center mb-6 relative z-10 revealable">
             <p className="text-sm text-gray-400">
-              Trusted by <span className="count-up text-orange-400 font-bold" ref={countUpRef}>{restaurantCount}</span> local restaurants
+              Serving restaurants across <span className="count-up text-orange-400 font-bold" ref={countUpRef}>{restaurantCount}</span>+ Seattle-area cities
             </p>
           </div>
 
