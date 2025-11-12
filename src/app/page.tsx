@@ -75,7 +75,7 @@ export default function Home() {
               Scale <span className="italic font-serif">Reliably</span><br />
               with <span className="italic font-serif">Dineably</span>
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-6">
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-6">
               We build fast restaurant websites and run local SEO & ads that turn visits into orders.
             </p>
           </div>
