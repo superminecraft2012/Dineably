@@ -643,35 +643,38 @@ export default function Services() {
             <table className="w-full border-collapse bg-black border border-white/10 rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-gradient-to-r from-orange-900/20 to-red-900/20">
-                  <th className="px-6 py-4 text-left text-sm font-bold text-white border-b border-white/10">Feature</th>
-                  <th className="px-6 py-4 text-center text-sm font-bold text-white border-b border-l border-white/10">
-                    <div className="mb-1">Launch</div>
-                    <div className="text-xs text-orange-400 font-normal">For New Restaurants</div>
+                  <th className="px-6 py-5 text-left text-sm font-bold text-white border-b border-white/10">Feature</th>
+                  <th className="px-6 py-5 text-center border-b border-l border-white/10">
+                    <div className="text-lg font-bold text-white mb-1">Launch</div>
+                    <div className="text-xs text-gray-400 font-normal">For New Restaurants</div>
                   </th>
-                  <th className="px-6 py-4 text-center text-sm font-bold text-white border-b border-l border-white/10 bg-orange-500/10">
-                    <div className="mb-1">Grow ⭐</div>
-                    <div className="text-xs text-orange-400 font-normal">Most Popular</div>
+                  <th className="px-6 py-5 text-center border-b border-l border-white/10 bg-orange-500/10 relative">
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap">
+                      Most Popular
+                    </div>
+                    <div className="text-lg font-bold text-white mb-1">Grow</div>
+                    <div className="text-xs text-gray-400 font-normal">Best Value</div>
                   </th>
-                  <th className="px-6 py-4 text-center text-sm font-bold text-white border-b border-l border-white/10">
-                    <div className="mb-1">Scale</div>
-                    <div className="text-xs text-orange-400 font-normal">Multi-Location</div>
+                  <th className="px-6 py-5 text-center border-b border-l border-white/10">
+                    <div className="text-lg font-bold text-white mb-1">Scale</div>
+                    <div className="text-xs text-gray-400 font-normal">Multi-Location</div>
                   </th>
                 </tr>
               </thead>
               <tbody className="text-sm">
                 <tr>
-                  <td className="px-6 py-3 text-white font-semibold border-b border-white/10">Pricing</td>
-                  <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10">
-                    <div className="font-bold text-white">$495</div>
-                    <div className="text-xs text-gray-500">+ $199/mo</div>
+                  <td className="px-6 py-4 text-white font-semibold border-b border-white/10">Pricing</td>
+                  <td className="px-6 py-4 text-center text-gray-300 border-b border-l border-white/10">
+                    <div className="text-3xl font-bold text-white mb-1">$199<span className="text-lg">/mo</span></div>
+                    <div className="text-sm text-gray-400">One-time setup $495</div>
                   </td>
-                  <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10 bg-orange-500/5">
-                    <div className="font-bold text-white">$995</div>
-                    <div className="text-xs text-gray-500">+ $499/mo</div>
+                  <td className="px-6 py-4 text-center text-gray-300 border-b border-l border-white/10 bg-orange-500/5">
+                    <div className="text-3xl font-bold text-white mb-1">$499<span className="text-lg">/mo</span></div>
+                    <div className="text-sm text-gray-400">One-time setup $995</div>
                   </td>
-                  <td className="px-6 py-3 text-center text-gray-300 border-b border-l border-white/10">
-                    <div className="font-bold text-white">$4,999</div>
-                    <div className="text-xs text-gray-500">+ $1,499/mo</div>
+                  <td className="px-6 py-4 text-center text-gray-300 border-b border-l border-white/10">
+                    <div className="text-3xl font-bold text-white mb-1">$1,499<span className="text-lg">/mo</span></div>
+                    <div className="text-sm text-gray-400">One-time setup $4,999</div>
                   </td>
                 </tr>
                 <tr>
@@ -706,26 +709,26 @@ export default function Services() {
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-gray-300 border-b border-white/10">Google Ads Management</td>
-                  <td className="px-6 py-3 text-center text-gray-500 border-b border-l border-white/10">—</td>
+                  <td className="px-6 py-3 text-center text-gray-400 border-b border-l border-white/10">—</td>
                   <td className="px-6 py-3 text-center border-b border-l border-white/10 bg-orange-500/5"><span className="text-orange-500">✓</span></td>
                   <td className="px-6 py-3 text-center border-b border-l border-white/10"><span className="text-orange-500">✓</span></td>
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-gray-300 border-b border-white/10">Facebook & Instagram Ads</td>
-                  <td className="px-6 py-3 text-center text-gray-500 border-b border-l border-white/10">—</td>
+                  <td className="px-6 py-3 text-center text-gray-400 border-b border-l border-white/10">—</td>
                   <td className="px-6 py-3 text-center border-b border-l border-white/10 bg-orange-500/5"><span className="text-orange-500">✓</span></td>
                   <td className="px-6 py-3 text-center border-b border-l border-white/10"><span className="text-orange-500">✓</span></td>
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-gray-300 border-b border-white/10">Professional Photography</td>
-                  <td className="px-6 py-3 text-center text-gray-500 border-b border-l border-white/10">—</td>
+                  <td className="px-6 py-3 text-center text-gray-400 border-b border-l border-white/10">—</td>
                   <td className="px-6 py-3 text-center border-b border-l border-white/10 bg-orange-500/5"><span className="text-orange-500">✓</span> 10 dishes</td>
                   <td className="px-6 py-3 text-center border-b border-l border-white/10"><span className="text-orange-500">✓</span> 20+ dishes</td>
                 </tr>
                 <tr>
                   <td className="px-6 py-3 text-gray-300 border-b border-white/10">Video Production</td>
-                  <td className="px-6 py-3 text-center text-gray-500 border-b border-l border-white/10">—</td>
-                  <td className="px-6 py-3 text-center text-gray-500 border-b border-l border-white/10 bg-orange-500/5">—</td>
+                  <td className="px-6 py-3 text-center text-gray-400 border-b border-l border-white/10">—</td>
+                  <td className="px-6 py-3 text-center text-gray-400 border-b border-l border-white/10 bg-orange-500/5">—</td>
                   <td className="px-6 py-3 text-center border-b border-l border-white/10"><span className="text-orange-500">✓</span> Reels & ads</td>
                 </tr>
                 <tr>
@@ -753,23 +756,32 @@ export default function Services() {
           {/* CTA Buttons */}
           <div className="grid md:grid-cols-3 gap-6 mt-12">
             {/* Launch CTA */}
-            <Link href="#contact">
-              <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all shadow-lg">
-                Get Started with Launch
+            <Link href="#contact" className="w-full">
+              <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all shadow-lg flex items-center justify-center gap-2">
+                Get Started
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </button>
             </Link>
             
             {/* Grow CTA */}
-            <Link href="#contact">
-              <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all shadow-lg shadow-orange-500/50">
-                Get Started with Grow ⭐
+            <Link href="#contact" className="w-full">
+              <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all shadow-lg shadow-orange-500/50 flex items-center justify-center gap-2">
+                Get Started
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </button>
             </Link>
             
             {/* Scale CTA */}
-            <Link href="#contact">
-              <button className="w-full bg-transparent border-2 border-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-500/10 transition-all">
-                Get Started with Scale
+            <Link href="#contact" className="w-full">
+              <button className="w-full bg-transparent border-2 border-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-500/10 transition-all flex items-center justify-center gap-2">
+                Get Started
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </button>
             </Link>
           </div>
