@@ -13,6 +13,7 @@ export default function Home() {
   const countUpRef = useRef<HTMLSpanElement>(null);
   const [dineablyText, setDineablyText] = useState('Dineably');
   const scrambleRef = useRef<NodeJS.Timeout | null>(null);
+  const [scrambleComplete, setScrambleComplete] = useState(false);
 
   // Staggered reveal animation on mount
   useEffect(() => {
@@ -73,6 +74,7 @@ export default function Home() {
 
       if (iteration >= targetText.length) {
         clearInterval(scrambleTimer);
+        setScrambleComplete(true);
       }
 
       iteration += 1 / 3; // Slower reveal
@@ -151,7 +153,7 @@ export default function Home() {
           <div className="text-center mb-8 relative z-10">
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight revealable">
               Scale <span className="italic font-serif">Reliably</span><br />
-              with <span className="italic font-serif">{dineablyText}</span>
+              with <span className={`italic font-serif ${scrambleComplete ? 'gold-glow-fade' : ''}`}>{dineablyText}</span>
             </h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-6 revealable">
               We build fast restaurant websites and run local SEO & ads that turn visits into orders.
