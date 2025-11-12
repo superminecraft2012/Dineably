@@ -629,17 +629,24 @@ export default function Services() {
       {/* Packages Section - Table Format for AEO */}
       <section className="py-20 bg-gradient-to-b from-black to-gray-900 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               Choose Your <span className="italic font-serif">Package</span>
             </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto mb-8">
+            <p className="text-gray-400 max-w-2xl mx-auto">
               Flexible solutions designed for restaurants at every stage of growth
             </p>
           </div>
 
+          {/* Most Popular Badge - Positioned above table */}
+          <div className="flex justify-center mb-4">
+            <div className="animate-bounce bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap shadow-lg shadow-orange-500/50">
+              Most Popular
+            </div>
+          </div>
+
           {/* Responsive Table */}
-          <div className="overflow-x-auto overflow-y-visible pt-20">
+          <div className="overflow-x-auto">
             <table className="w-full border-collapse bg-black border border-white/10 rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-gradient-to-r from-orange-900/20 to-red-900/20">
@@ -648,10 +655,7 @@ export default function Services() {
                     <div className="text-lg font-bold text-white mb-1">Launch</div>
                     <div className="text-xs text-gray-400 font-normal">For New Restaurants</div>
                   </th>
-                  <th className="px-6 py-5 text-center border-b border-l border-white/10 bg-orange-500/10 relative">
-                    <div className="animate-bounce absolute -top-12 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap shadow-lg shadow-orange-500/50">
-                      Most Popular
-                    </div>
+                  <th className="px-6 py-5 text-center border-b border-l border-white/10 bg-orange-500/10">
                     <div className="text-lg font-bold text-white mb-1">Grow</div>
                     <div className="text-xs text-gray-400 font-normal">Best Value</div>
                   </th>
