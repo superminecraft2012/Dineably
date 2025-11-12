@@ -665,15 +665,15 @@ export default function Services() {
                 <tr>
                   <td className="px-6 py-4 text-white font-semibold border-b border-white/10">Pricing</td>
                   <td className="px-6 py-4 text-center text-gray-300 border-b border-l border-white/10">
-                    <div className="text-3xl font-bold text-white mb-1">$199<span className="text-lg">/mo</span></div>
+                    <div className="text-2xl font-bold text-white mb-1">$199<span className="text-base">/mo</span></div>
                     <div className="text-sm text-gray-400">One-time setup $495</div>
                   </td>
                   <td className="px-6 py-4 text-center text-gray-300 border-b border-l border-white/10 bg-orange-500/5">
-                    <div className="text-3xl font-bold text-white mb-1">$499<span className="text-lg">/mo</span></div>
+                    <div className="text-2xl font-bold text-white mb-1">$499<span className="text-base">/mo</span></div>
                     <div className="text-sm text-gray-400">One-time setup $995</div>
                   </td>
                   <td className="px-6 py-4 text-center text-gray-300 border-b border-l border-white/10">
-                    <div className="text-3xl font-bold text-white mb-1">$1,499<span className="text-lg">/mo</span></div>
+                    <div className="text-2xl font-bold text-white mb-1">$1,499<span className="text-base">/mo</span></div>
                     <div className="text-sm text-gray-400">One-time setup $4,999</div>
                   </td>
                 </tr>
@@ -790,11 +790,11 @@ export default function Services() {
           <div className="hidden">
             <div className="bg-black border border-white/10 rounded-lg p-8 hover:border-orange-500/50 transition-all">
               <div className="text-sm text-orange-400 font-semibold mb-2 uppercase">For New Restaurants</div>
-              <h3 className="text-3xl font-bold mb-2">Launch</h3>
+              <h3 className="text-2xl font-bold mb-2">Launch</h3>
               <p className="text-gray-400 mb-6">Get online and start driving orders fast</p>
               
               <div className="mb-6">
-                <div className="text-3xl font-bold mb-1">Starting at $3,500</div>
+                <div className="text-2xl font-bold mb-1">Starting at $3,500</div>
                 <div className="text-sm text-gray-500">One-time + $1,500/mo</div>
               </div>
 
@@ -848,11 +848,11 @@ export default function Services() {
                 Most Popular
               </div>
               <div className="text-sm text-orange-400 font-semibold mb-2 uppercase">For Growing Brands</div>
-              <h3 className="text-3xl font-bold mb-2">Grow</h3>
+              <h3 className="text-2xl font-bold mb-2">Grow</h3>
               <p className="text-gray-400 mb-6">Scale orders with SEO and paid ads</p>
               
               <div className="mb-6">
-                <div className="text-3xl font-bold mb-1">Starting at $5,000</div>
+                <div className="text-2xl font-bold mb-1">Starting at $5,000</div>
                 <div className="text-sm text-gray-500">One-time + $2,500/mo</div>
               </div>
 
@@ -909,11 +909,11 @@ export default function Services() {
             {/* Scale Package */}
             <div className="bg-black border border-white/10 rounded-lg p-8 hover:border-orange-500/50 transition-all">
               <div className="text-sm text-orange-400 font-semibold mb-2 uppercase">For Multi-Location Brands</div>
-              <h3 className="text-3xl font-bold mb-2">Scale</h3>
+              <h3 className="text-2xl font-bold mb-2">Scale</h3>
               <p className="text-gray-400 mb-6">Enterprise solutions for maximum growth</p>
               
               <div className="mb-6">
-                <div className="text-3xl font-bold mb-1">Custom Pricing</div>
+                <div className="text-2xl font-bold mb-1">Custom Pricing</div>
                 <div className="text-sm text-gray-500">Based on locations & goals</div>
               </div>
 
