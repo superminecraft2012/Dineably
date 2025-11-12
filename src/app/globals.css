@@ -95,17 +95,14 @@ body {
 /* 11. Gold Glow Fade for Scramble Animation Complete */
 @keyframes gold-glow {
   0% {
-    color: #ffffff;
     text-shadow: none;
   }
   20% {
-    color: #fbbf24;
     text-shadow: 0 0 20px rgba(251, 191, 36, 0.8),
                  0 0 40px rgba(251, 191, 36, 0.6),
                  0 0 60px rgba(251, 191, 36, 0.4);
   }
   100% {
-    color: #ffffff;
     text-shadow: none;
   }
 }
