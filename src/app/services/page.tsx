@@ -639,7 +639,7 @@ export default function Services() {
           </div>
 
           {/* Responsive Table */}
-          <div className="overflow-x-auto pt-16">
+          <div className="overflow-x-auto overflow-y-visible pt-20">
             <table className="w-full border-collapse bg-black border border-white/10 rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-gradient-to-r from-orange-900/20 to-red-900/20">
