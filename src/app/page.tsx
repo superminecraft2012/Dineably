@@ -56,8 +56,10 @@ export default function Home() {
     const letters = 'abcdefghijklmnopqrstuvwxyz';
     const targetText = 'Dineably';
     let iteration = 0;
-    const scrambleDuration = 50; // ms per frame
-    const totalIterations = 15; // Total scramble cycles
+    const totalDuration = 3000; // 3 seconds total
+    const scrambleDuration = 40; // ms per frame
+    const totalFrames = totalDuration / scrambleDuration; // 75 frames
+    const revealRate = targetText.length / totalFrames; // How much to reveal per frame
     
     const scrambleTimer = setInterval(() => {
       setDineablyText(
@@ -77,7 +79,7 @@ export default function Home() {
         setScrambleComplete(true);
       }
 
-      iteration += 1 / 3; // Slower reveal
+      iteration += revealRate;
     }, scrambleDuration);
 
     scrambleRef.current = scrambleTimer;
@@ -164,7 +166,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 relative z-10 px-4 sm:px-0 revealable">
             <button 
               onClick={openModal}
-              className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 flex items-center justify-center gap-2 shadow-lg shadow-orange-500/50 cta-button cta-pulse"
+              className={`w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 flex items-center justify-center gap-2 shadow-lg shadow-orange-500/50 cta-button cta-pulse ${scrambleComplete ? 'gold-glow-fade-button' : ''}`}
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
