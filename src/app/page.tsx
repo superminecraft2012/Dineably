@@ -2,12 +2,51 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useModal } from "@/components/ModalProvider";
 
 export default function Home() {
   const { openModal } = useModal();
+  const [restaurantCount, setRestaurantCount] = useState(0);
+  const countUpRef = useRef<HTMLSpanElement>(null);
+
+  // Staggered reveal animation on mount
+  useEffect(() => {
+    const revealables = document.querySelectorAll('.revealable');
+    
+    // Trigger reveals on mount (hero is above fold)
+    const timer = setTimeout(() => {
+      revealables.forEach(el => {
+        el.classList.add('reveal');
+      });
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Count-up animation for social proof
+  useEffect(() => {
+    const targetCount = 12;
+    const duration = 800; // ms
+    const steps = 30;
+    const increment = targetCount / steps;
+    const stepDuration = duration / steps;
+    
+    let currentCount = 0;
+    const timer = setInterval(() => {
+      currentCount += increment;
+      if (currentCount >= targetCount) {
+        setRestaurantCount(targetCount);
+        clearInterval(timer);
+      } else {
+        setRestaurantCount(Math.floor(currentCount));
+      }
+    }, stepDuration);
+
+    return () => clearInterval(timer);
+  }, []);
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -33,7 +72,7 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 pt-20 pb-32">
           {/* Brand Logos and Rating */}
-          <div className="flex items-center justify-center gap-4 mb-12">
+          <div className="flex items-center justify-center gap-4 mb-12 revealable">
             {/* Brand Icons */}
             <div className="flex items-center -space-x-2">
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-blue-500 border-2 border-black flex items-center justify-center text-xs font-bold">
@@ -71,28 +110,31 @@ export default function Home() {
 
           {/* Main Heading */}
           <div className="text-center mb-8 relative z-10">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight revealable">
               Scale <span className="italic font-serif">Reliably</span><br />
               with <span className="italic font-serif">Dineably</span>
             </h1>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-6">
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-6 revealable">
               We build fast restaurant websites and run local SEO & ads that turn visits into orders.
             </p>
           </div>
 
           {/* CTA Buttons - Above the glow */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-12 relative z-10 px-4 sm:px-0">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 relative z-10 px-4 sm:px-0 revealable">
             <button 
               onClick={openModal}
-              className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all flex items-center justify-center gap-2 shadow-lg shadow-orange-500/50"
+              className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 flex items-center justify-center gap-2 shadow-lg shadow-orange-500/50 cta-button cta-pulse"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
                 Book Audit
+              <svg className="w-4 h-4 arrow-nudge" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </button>
             <Link href="/case-studies" className="w-full sm:w-auto">
-            <button className="w-full bg-transparent border border-white/20 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-white/5 transition-all flex items-center justify-center gap-2">
+            <button className="w-full bg-transparent border border-white/20 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-white/5 flex items-center justify-center gap-2 cta-button">
                 See Case Study
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -101,8 +143,15 @@ export default function Home() {
             </Link>
           </div>
 
+          {/* Social Proof Count-Up - Near CTA */}
+          <div className="text-center mb-6 relative z-10 revealable">
+            <p className="text-sm text-gray-400">
+              Trusted by <span className="count-up text-orange-400 font-bold" ref={countUpRef}>{restaurantCount}</span> local restaurants
+            </p>
+          </div>
+
           {/* Proof Metrics */}
-          <div className="text-center relative z-10">
+          <div className="text-center relative z-10 revealable">
             <p className="text-sm text-gray-400 max-w-2xl mx-auto">
               Avg site speed &lt;2.5s • Optimized for maximum conversions
             </p>
