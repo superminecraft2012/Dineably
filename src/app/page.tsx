@@ -181,13 +181,13 @@ export default function Home() {
       </section>
 
       {/* AEO Definition Snippets - Above the fold */}
-      <section className="py-12 sm:py-16 bg-black border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
+      <section className="py-12 sm:py-16 md:py-20 bg-black border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             
             {/* Definition 1 */}
-            <div className="bg-gradient-to-br from-gray-900 to-black border border-white/10 rounded-lg p-4 sm:p-6">
-              <div className="flex items-center gap-2 mb-3">
+            <div className="bg-gradient-to-br from-gray-900 to-black border border-white/10 rounded-lg p-4 sm:p-6 lg:p-8">
+              <div className="flex items-center gap-2 mb-3 lg:mb-4">
                 <div className="w-8 h-8 bg-orange-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -195,14 +195,14 @@ export default function Home() {
                 </div>
                 <h3 className="text-sm sm:text-base font-bold text-white">What is local SEO for restaurants?</h3>
               </div>
-              <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
+              <p className="text-xs sm:text-sm text-gray-400 leading-relaxed lg:leading-loose">
                 Local SEO helps restaurants appear in "near me" searches and Google Maps results. It includes optimizing your Google Business Profile, managing reviews, building local citations, and targeting location-specific keywords like "Thai food Seattle" to capture customers actively searching for nearby dining options.
               </p>
             </div>
 
             {/* Definition 2 */}
-            <div className="bg-gradient-to-br from-gray-900 to-black border border-white/10 rounded-lg p-4 sm:p-6">
-              <div className="flex items-center gap-2 mb-3">
+            <div className="bg-gradient-to-br from-gray-900 to-black border border-white/10 rounded-lg p-4 sm:p-6 lg:p-8">
+              <div className="flex items-center gap-2 mb-3 lg:mb-4">
                 <div className="w-8 h-8 bg-orange-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -210,14 +210,14 @@ export default function Home() {
                 </div>
                 <h3 className="text-sm sm:text-base font-bold text-white">What is GBP?</h3>
               </div>
-              <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
+              <p className="text-xs sm:text-sm text-gray-400 leading-relaxed lg:leading-loose">
                 Google Business Profile (GBP) is your restaurant's free listing on Google Search and Maps. A fully optimized GBP with photos, posts, reviews, and accurate hours helps you rank in the local 3-pack and converts searchers into diners by showing menus, directions, and real-time order buttons.
               </p>
             </div>
 
             {/* Definition 3 */}
-            <div className="bg-gradient-to-br from-gray-900 to-black border border-white/10 rounded-lg p-4 sm:p-6">
-              <div className="flex items-center gap-2 mb-3">
+            <div className="bg-gradient-to-br from-gray-900 to-black border border-white/10 rounded-lg p-4 sm:p-6 lg:p-8">
+              <div className="flex items-center gap-2 mb-3 lg:mb-4">
                 <div className="w-8 h-8 bg-orange-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -225,7 +225,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-sm sm:text-base font-bold text-white">What is dayparting?</h3>
               </div>
-              <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
+              <p className="text-xs sm:text-sm text-gray-400 leading-relaxed lg:leading-loose">
                 Dayparting is scheduling ads to run during specific hours when your restaurant is busiest or has capacity. For example, targeting lunch ads from 11am-1pm or dinner ads from 5pm-8pm maximizes ROI by reaching customers when they're actively deciding where to eat, not at midnight when you're closed.
               </p>
             </div>
@@ -235,27 +235,27 @@ export default function Home() {
       </section>
 
       {/* What We Do Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-black to-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-black to-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               What We <span className="italic font-serif">Do</span>
             </h2>
-            <p className="text-sm sm:text-base text-gray-400 max-w-2xl mx-auto px-4">
+            <p className="text-sm sm:text-base text-gray-400 max-w-2xl mx-auto px-4 sm:px-0">
               Three core services that drive measurable results for restaurants
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {/* Websites/CRO */}
-            <div className="bg-black border border-white/10 rounded-lg p-6 sm:p-8 hover:border-orange-500/50 transition-all">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4">
+            <div className="bg-black border border-white/10 rounded-lg p-6 sm:p-8 lg:p-10 hover:border-orange-500/50 transition-all">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4 lg:mb-6">
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-3">Websites & CRO</h3>
-              <p className="text-sm sm:text-base text-gray-400 mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold mb-3 lg:mb-4">Websites & CRO</h3>
+              <p className="text-sm sm:text-base text-gray-400 mb-4 lg:mb-6 leading-relaxed">
                 Lightning-fast, mobile-optimized sites that convert visitors into customers
               </p>
               <ul className="space-y-2 text-xs sm:text-sm text-gray-300">
@@ -281,14 +281,14 @@ export default function Home() {
             </div>
 
             {/* Local SEO & GBP */}
-            <div className="bg-black border border-white/10 rounded-lg p-6 sm:p-8 hover:border-orange-500/50 transition-all">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4">
+            <div className="bg-black border border-white/10 rounded-lg p-6 sm:p-8 lg:p-10 hover:border-orange-500/50 transition-all">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4 lg:mb-6">
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-3">Local SEO & GBP</h3>
-              <p className="text-sm sm:text-base text-gray-400 mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold mb-3 lg:mb-4">Local SEO & GBP</h3>
+              <p className="text-sm sm:text-base text-gray-400 mb-4 lg:mb-6 leading-relaxed">
                 Dominate local search results and Google Business Profile rankings
               </p>
               <ul className="space-y-2 text-xs sm:text-sm text-gray-300">
@@ -314,14 +314,14 @@ export default function Home() {
             </div>
 
             {/* Paid Ads */}
-            <div className="bg-black border border-white/10 rounded-lg p-6 sm:p-8 hover:border-orange-500/50 transition-all">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4">
+            <div className="bg-black border border-white/10 rounded-lg p-6 sm:p-8 lg:p-10 hover:border-orange-500/50 transition-all">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4 lg:mb-6">
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-3">Paid Ads</h3>
-              <p className="text-sm sm:text-base text-gray-400 mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold mb-3 lg:mb-4">Paid Ads</h3>
+              <p className="text-sm sm:text-base text-gray-400 mb-4 lg:mb-6 leading-relaxed">
                 Profitable Google & social ads that scale your order volume
               </p>
               <ul className="space-y-2 text-xs sm:text-sm text-gray-300">
@@ -350,21 +350,21 @@ export default function Home() {
       </section>
 
       {/* Mini Case Highlights */}
-      <section className="py-12 sm:py-16 md:py-20 bg-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Real <span className="italic font-serif">Results</span>
             </h2>
-            <p className="text-sm sm:text-base text-gray-400 max-w-2xl mx-auto px-4">
+            <p className="text-sm sm:text-base text-gray-400 max-w-2xl mx-auto px-4 sm:px-0">
               See how we&apos;ve helped Seattle-area restaurants grow
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {/* Case 1 */}
             <Link href="/case-studies" className="group">
-              <div className="bg-gradient-to-br from-orange-900/20 to-red-900/20 border border-white/10 rounded-lg p-5 sm:p-6 md:p-8 hover:border-orange-500/50 transition-all h-full">
+              <div className="bg-gradient-to-br from-orange-900/20 to-red-900/20 border border-white/10 rounded-lg p-5 sm:p-6 md:p-8 lg:p-10 hover:border-orange-500/50 transition-all h-full">
                 <div className="flex items-center gap-3 mb-4">
                   <Image 
                     src="/partners/ThaprachanLogo.webp" 
@@ -399,7 +399,7 @@ export default function Home() {
 
             {/* Case 2 */}
             <Link href="/case-studies/larb-thai-seattle" className="group">
-              <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 border border-white/10 rounded-lg p-5 sm:p-6 md:p-8 hover:border-orange-500/50 transition-all h-full">
+              <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 border border-white/10 rounded-lg p-5 sm:p-6 md:p-8 lg:p-10 hover:border-orange-500/50 transition-all h-full">
                 <div className="flex items-center gap-3 mb-4">
                   <Image 
                     src="/partners/larblogo.webp" 
@@ -434,7 +434,7 @@ export default function Home() {
 
             {/* Case 3 */}
             <Link href="/case-studies" className="group">
-              <div className="bg-gradient-to-br from-orange-900/20 to-red-900/20 border border-white/10 rounded-lg p-5 sm:p-6 md:p-8 hover:border-orange-500/50 transition-all h-full">
+              <div className="bg-gradient-to-br from-orange-900/20 to-red-900/20 border border-white/10 rounded-lg p-5 sm:p-6 md:p-8 lg:p-10 hover:border-orange-500/50 transition-all h-full">
                 <div className="flex items-center gap-3 mb-4">
                   <Image 
                     src="/partners/chadalynnwoodlogo.webp" 
@@ -503,8 +503,8 @@ export default function Home() {
       </section>
 
       {/* FAQ Preview */}
-      <section className="py-12 sm:py-16 md:py-20 bg-black">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-black">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Common <span className="italic font-serif">Questions</span>
@@ -514,24 +514,24 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="space-y-4">
-            <div className="border border-white/10 rounded-lg p-4 sm:p-6 hover:border-orange-500/50 transition-all">
-              <h3 className="text-lg sm:text-xl font-bold mb-3">How long does it take to see results?</h3>
-              <p className="text-sm sm:text-base text-gray-400">
+          <div className="space-y-4 lg:space-y-6">
+            <div className="border border-white/10 rounded-lg p-4 sm:p-6 lg:p-8 hover:border-orange-500/50 transition-all">
+              <h3 className="text-lg sm:text-xl font-bold mb-3 lg:mb-4">How long does it take to see results?</h3>
+              <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
                 Website improvements show results within 2-4 weeks. SEO gains momentum in 2-3 months. Paid ads can drive orders within days of launch.
               </p>
             </div>
 
-            <div className="border border-white/10 rounded-lg p-4 sm:p-6 hover:border-orange-500/50 transition-all">
-              <h3 className="text-lg sm:text-xl font-bold mb-3">What makes your restaurant websites fast?</h3>
-              <p className="text-sm sm:text-base text-gray-400">
+            <div className="border border-white/10 rounded-lg p-4 sm:p-6 lg:p-8 hover:border-orange-500/50 transition-all">
+              <h3 className="text-lg sm:text-xl font-bold mb-3 lg:mb-4">What makes your restaurant websites fast?</h3>
+              <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
                 We use modern frameworks, optimize images, minimize code, and leverage CDNs. Average load times under 2.5 seconds mean visitors don&apos;t bounce before ordering.
               </p>
             </div>
 
-            <div className="border border-white/10 rounded-lg p-4 sm:p-6 hover:border-orange-500/50 transition-all">
-              <h3 className="text-lg sm:text-xl font-bold mb-3">Do you work with restaurants outside Seattle?</h3>
-              <p className="text-sm sm:text-base text-gray-400">
+            <div className="border border-white/10 rounded-lg p-4 sm:p-6 lg:p-8 hover:border-orange-500/50 transition-all">
+              <h3 className="text-lg sm:text-xl font-bold mb-3 lg:mb-4">Do you work with restaurants outside Seattle?</h3>
+              <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
                 Yes! While we specialize in the Seattle area, we work with restaurants throughout Washington State and select markets nationwide.
               </p>
             </div>
@@ -549,18 +549,18 @@ export default function Home() {
       </section>
 
       {/* AEO TL;DR Box */}
-      <section className="py-12 sm:py-16 bg-gradient-to-b from-black to-gray-900 border-t border-white/10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="bg-gradient-to-br from-orange-900/10 to-red-900/10 border border-orange-500/30 rounded-lg p-5 sm:p-6 md:p-8">
-            <div className="flex items-start gap-3 sm:gap-4">
-              <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-black to-gray-900 border-t border-white/10">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-br from-orange-900/10 to-red-900/10 border border-orange-500/30 rounded-lg p-5 sm:p-6 md:p-8 lg:p-10">
+            <div className="flex items-start gap-3 sm:gap-4 lg:gap-6">
+              <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-3">What does Dineably do?</h3>
-                <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 lg:mb-4">What does Dineably do?</h3>
+                <p className="text-sm sm:text-base lg:text-lg text-gray-300 leading-relaxed lg:leading-loose">
                   Dineably builds fast restaurant websites and runs local SEO and ads that increase orders and reservations in the Seattle area.
                 </p>
               </div>
