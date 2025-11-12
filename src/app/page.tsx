@@ -56,9 +56,9 @@ export default function Home() {
     const letters = 'abcdefghijklmnopqrstuvwxyz';
     const targetText = 'Dineably';
     let iteration = 0;
-    const totalDuration = 3000; // 3 seconds total
+    const totalDuration = 1200; // 1.2 seconds total
     const scrambleDuration = 40; // ms per frame
-    const totalFrames = totalDuration / scrambleDuration; // 75 frames
+    const totalFrames = totalDuration / scrambleDuration; // 30 frames
     const revealRate = targetText.length / totalFrames; // How much to reveal per frame
     
     const scrambleTimer = setInterval(() => {
