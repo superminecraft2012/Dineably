@@ -11,6 +11,8 @@ export default function Home() {
   const { openModal } = useModal();
   const [restaurantCount, setRestaurantCount] = useState(0);
   const countUpRef = useRef<HTMLSpanElement>(null);
+  const [dineablyText, setDineablyText] = useState('Dineably');
+  const scrambleRef = useRef<NodeJS.Timeout | null>(null);
 
   // Staggered reveal animation on mount
   useEffect(() => {
@@ -46,6 +48,43 @@ export default function Home() {
     }, stepDuration);
 
     return () => clearInterval(timer);
+  }, []);
+
+  // Letter scramble animation for "Dineably"
+  useEffect(() => {
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const targetText = 'Dineably';
+    let iteration = 0;
+    const scrambleDuration = 50; // ms per frame
+    const totalIterations = 15; // Total scramble cycles
+    
+    const scrambleTimer = setInterval(() => {
+      setDineablyText(
+        targetText
+          .split('')
+          .map((letter, index) => {
+            if (index < iteration) {
+              return targetText[index];
+            }
+            return letters[Math.floor(Math.random() * letters.length)];
+          })
+          .join('')
+      );
+
+      if (iteration >= targetText.length) {
+        clearInterval(scrambleTimer);
+      }
+
+      iteration += 1 / 3; // Slower reveal
+    }, scrambleDuration);
+
+    scrambleRef.current = scrambleTimer;
+
+    return () => {
+      if (scrambleRef.current) {
+        clearInterval(scrambleRef.current);
+      }
+    };
   }, []);
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -112,7 +151,7 @@ export default function Home() {
           <div className="text-center mb-8 relative z-10">
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight revealable">
               Scale <span className="italic font-serif">Reliably</span><br />
-              with <span className="italic font-serif">Dineably</span>
+              with <span className="italic font-serif">{dineablyText}</span>
             </h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-6 revealable">
               We build fast restaurant websites and run local SEO & ads that turn visits into orders.
