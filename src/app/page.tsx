@@ -182,7 +182,7 @@ export default function Home() {
 
       {/* AEO Definition Snippets - Above the fold */}
       <section className="py-12 sm:py-16 bg-black border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
             
             {/* Definition 1 */}
@@ -236,7 +236,7 @@ export default function Home() {
 
       {/* What We Do Section */}
       <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-black to-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               What We <span className="italic font-serif">Do</span>
@@ -351,7 +351,7 @@ export default function Home() {
 
       {/* Mini Case Highlights */}
       <section className="py-12 sm:py-16 md:py-20 bg-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Real <span className="italic font-serif">Results</span>
@@ -472,7 +472,7 @@ export default function Home() {
 
       {/* GEO Block */}
       <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-black to-gray-900 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Serving Greater <span className="italic font-serif">Seattle</span>
@@ -504,7 +504,7 @@ export default function Home() {
 
       {/* FAQ Preview */}
       <section className="py-12 sm:py-16 md:py-20 bg-black">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Common <span className="italic font-serif">Questions</span>
@@ -550,7 +550,7 @@ export default function Home() {
 
       {/* AEO TL;DR Box */}
       <section className="py-12 sm:py-16 bg-gradient-to-b from-black to-gray-900 border-t border-white/10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <div className="max-w-4xl mx-auto px-6">
           <div className="bg-gradient-to-br from-orange-900/10 to-red-900/10 border border-orange-500/30 rounded-lg p-5 sm:p-6 md:p-8">
             <div className="flex items-start gap-3 sm:gap-4">
               <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
