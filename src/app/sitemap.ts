@@ -38,18 +38,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  // Case study pages
-  const caseStudies = [
-    '/case-studies/thaprachan-thai-seattle',
-    '/case-studies/larb-thai-seattle',
-    '/case-studies/chada-thai-lynnwood',
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }))
-
-  return [...routes, ...cityPages, ...caseStudies]
+  return [...routes, ...cityPages]
 }
 
