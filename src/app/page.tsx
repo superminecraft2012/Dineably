@@ -75,7 +75,7 @@ export default function Home() {
               Scale <span className="italic font-serif">Reliably</span><br />
               with <span className="italic font-serif">Dineably</span>
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-6 px-4 sm:px-0">
+            <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed mb-6">
               We build fast restaurant websites and run local SEO & ads that turn visits into orders.
             </p>
           </div>
@@ -181,9 +181,9 @@ export default function Home() {
       </section>
 
       {/* AEO Definition Snippets - Above the fold */}
-      <section className="py-12 sm:py-16 bg-black border-t border-white/10">
+      <section className="py-16 bg-black border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             
             {/* Definition 1 */}
             <div className="bg-gradient-to-br from-gray-900 to-black border border-white/10 rounded-lg p-4 sm:p-6">
