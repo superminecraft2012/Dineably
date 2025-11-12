@@ -640,19 +640,6 @@ export default function Services() {
 
           {/* Responsive Table */}
           <div className="overflow-x-auto pt-16">
-            <style jsx>{`
-              @keyframes float {
-                0%, 100% {
-                  transform: translate(-50%, 0px);
-                }
-                50% {
-                  transform: translate(-50%, -6px);
-                }
-              }
-              .float-badge {
-                animation: float 3s ease-in-out infinite;
-              }
-            `}</style>
             <table className="w-full border-collapse bg-black border border-white/10 rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-gradient-to-r from-orange-900/20 to-red-900/20">
@@ -662,7 +649,7 @@ export default function Services() {
                     <div className="text-xs text-gray-400 font-normal">For New Restaurants</div>
                   </th>
                   <th className="px-6 py-5 text-center border-b border-l border-white/10 bg-orange-500/10 relative">
-                    <div className="float-badge absolute -top-12 left-1/2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap shadow-lg shadow-orange-500/50">
+                    <div className="animate-bounce absolute -top-12 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap shadow-lg shadow-orange-500/50">
                       Most Popular
                     </div>
                     <div className="text-lg font-bold text-white mb-1">Grow</div>
