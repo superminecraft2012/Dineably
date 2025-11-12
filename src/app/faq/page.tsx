@@ -57,7 +57,7 @@ export default function FAQ() {
         "name": "What types of restaurants do you work with?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We specialize in 6 and 7-figure restaurant brands, particularly Thai, Asian, and local restaurants in Greater Seattle (Bellevue, Kirkland, Redmond, Lynnwood, Woodinville). Our clients want to scale to 8 figures with reliable, profitable marketing strategies."
+          "text": "We specialize in established restaurant brands, particularly Thai, Asian, and local restaurants in Greater Seattle (Bellevue, Kirkland, Redmond, Lynnwood, Woodinville). Our clients want to grow with reliable, profitable marketing strategies."
         }
       },
       {
@@ -129,7 +129,7 @@ export default function FAQ() {
         "name": "What makes you different from other agencies?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Restaurant-only focus means we know what works. Menu-first UX design. Sub-2.5s load times guaranteed. Local SEO specialists, not generalists. Closed-loop tracking shows exactly which orders came from our work. Real case studies with transparent results."
+          "text": "Restaurant-only focus means we know what works. Menu-first UX design. Sub-2.5s average load times. Local SEO specialists, not generalists. Closed-loop tracking shows exactly which orders came from our work. Working with established Seattle-area restaurants."
         }
       },
       {
@@ -188,7 +188,7 @@ export default function FAQ() {
           <div className="border border-white/10 rounded-lg p-6 hover:border-orange-500/50 transition-colors">
             <h3 className="text-xl font-bold mb-3">What types of restaurants do you work with?</h3>
             <p className="text-gray-400 leading-relaxed">
-              We specialize in 6 and 7-figure restaurant brands, particularly Thai, Asian, and local restaurants in Greater Seattle (Bellevue, Kirkland, Redmond, Lynnwood, Woodinville). Our clients want to scale to 8 figures with reliable, profitable marketing strategies.
+              We specialize in established restaurant brands, particularly Thai, Asian, and local restaurants in Greater Seattle (Bellevue, Kirkland, Redmond, Lynnwood, Woodinville). Our clients want to grow with reliable, profitable marketing strategies.
             </p>
           </div>
           
@@ -251,7 +251,7 @@ export default function FAQ() {
           <div className="border border-white/10 rounded-lg p-6 hover:border-orange-500/50 transition-colors">
             <h3 className="text-xl font-bold mb-3">What makes you different from other agencies?</h3>
             <p className="text-gray-400 leading-relaxed">
-              Restaurant-only focus means we know what works. Menu-first UX design. Sub-2.5s load times guaranteed. Local SEO specialists, not generalists. Closed-loop tracking shows exactly which orders came from our work. Real case studies with transparent results.
+              Restaurant-only focus means we know what works. Menu-first UX design. Sub-2.5s average load times. Local SEO specialists, not generalists. Closed-loop tracking shows exactly which orders came from our work. Working with established Seattle-area restaurants.
             </p>
           </div>
           

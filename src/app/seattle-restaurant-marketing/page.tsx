@@ -67,15 +67,15 @@ export default function SeattleRestaurantMarketing() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="prose prose-invert max-w-none">
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              Dineably specializes in restaurant marketing for Seattle's competitive dining scene. We work exclusively with restaurant brands—particularly Thai, Asian, and local establishments—helping them scale from 6 and 7 figures to 8 figures with reliable, profitable digital strategies.
+              Dineably specializes in restaurant marketing for Seattle's competitive dining scene. We work exclusively with restaurant brands—particularly Thai, Asian, and local establishments—helping them grow with reliable, profitable digital strategies.
             </p>
             
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              Unlike general marketing agencies, we understand the unique challenges Seattle restaurants face: high competition in neighborhoods like Capitol Hill, Fremont, and Ballard; mobile-first customers searching "near me" on their way to dinner; and the need for lightning-fast websites that work flawlessly on phones. Our websites average sub-2.5 second load times, and our local SEO campaigns consistently place clients in the top 3 Google Maps results.
+              Unlike general marketing agencies, we understand the unique challenges Seattle restaurants face: high competition in neighborhoods like Capitol Hill, Fremont, and Ballard; mobile-first customers searching "near me" on their way to dinner; and the need for lightning-fast websites that work flawlessly on phones. Our websites average sub-2.5 second load times, and our local SEO campaigns are designed to improve Google Maps rankings.
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              We've helped Seattle restaurants increase online orders by an average of 45% within 90 days. Our proven process combines <Link href="/services" className="text-orange-400 hover:text-orange-300">conversion-optimized websites</Link>, aggressive local SEO to dominate "Thai restaurant Seattle" and related searches, and data-driven advertising campaigns that target lunch rushes in SoDo and dinner crowds near Pike Place Market.
+              We help Seattle restaurants drive more online orders through our proven process: <Link href="/services" className="text-orange-400 hover:text-orange-300">conversion-optimized websites</Link>, aggressive local SEO to dominate "Thai restaurant Seattle" and related searches, and data-driven advertising campaigns that target lunch rushes in SoDo and dinner crowds near Pike Place Market.
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed mb-8">
@@ -95,7 +95,7 @@ export default function SeattleRestaurantMarketing() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-orange-500 mt-1">✓</span>
-                  <span><strong>Speed Obsessed:</strong> Sub-2.5s load times guaranteed. Every second counts when customers are hungry.</span>
+                  <span><strong>Speed Obsessed:</strong> Sub-2.5s average load times. Every second counts when customers are hungry.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-orange-500 mt-1">✓</span>

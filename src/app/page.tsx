@@ -62,7 +62,7 @@ export default function Home() {
                   </svg>
                 ))}
               </div>
-              <div className="text-xs text-gray-300">65+ brands scaled</div>
+              <div className="text-xs text-gray-300">Trusted by local restaurants</div>
             </div>
           </div>
 
@@ -104,7 +104,7 @@ export default function Home() {
           {/* Proof Metrics */}
           <div className="text-center relative z-10">
             <p className="text-sm text-gray-400 max-w-2xl mx-auto">
-              Avg site speed &lt;2.5s • +30% median rise in &apos;Order Online&apos; clicks
+              Avg site speed &lt;2.5s • Optimized for maximum conversions
             </p>
           </div>
         </div>
@@ -354,118 +354,94 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              Real <span className="italic font-serif">Results</span>
+              Our <span className="italic font-serif">Partners</span>
             </h2>
             <p className="text-sm sm:text-base text-gray-400 max-w-2xl mx-auto px-4">
-              See how we&apos;ve helped Seattle-area restaurants grow
+              Working with Seattle-area restaurants to build their digital presence
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
-            {/* Case 1 */}
-            <Link href="/case-studies" className="group">
-              <div className="bg-gradient-to-br from-orange-900/20 to-red-900/20 border border-white/10 rounded-lg p-5 sm:p-6 md:p-8 hover:border-orange-500/50 transition-all h-full">
-                <div className="flex items-center gap-3 mb-4">
-                  <Image 
-                    src="/partners/ThaprachanLogo.webp" 
-                    alt="Thaprachan Thai restaurant logo" 
-                    width={48} 
-                    height={48}
-                    className="h-10 sm:h-12 w-auto"
-                  />
+            {/* Partner 1 */}
+            <div className="bg-gradient-to-br from-orange-900/20 to-red-900/20 border border-white/10 rounded-lg p-5 sm:p-6 md:p-8 hover:border-orange-500/50 transition-all h-full">
+              <div className="flex items-center gap-3 mb-4">
+                <Image 
+                  src="/partners/ThaprachanLogo.webp" 
+                  alt="Thaprachan Thai restaurant logo" 
+                  width={48} 
+                  height={48}
+                  className="h-10 sm:h-12 w-auto"
+                />
+              </div>
+              <div className="text-xs text-orange-400 font-semibold mb-3 uppercase">Thai Restaurant • Seattle</div>
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 group-hover:text-orange-400 transition-colors">
+                Thaprachan Thai
+              </h3>
+              <div className="space-y-3 mb-6">
+                <div>
+                  <p className="text-xs sm:text-sm text-gray-400 mb-1">What We Built</p>
+                  <p className="text-sm sm:text-base text-white">Complete website redesign with optimized menu presentation and mobile-first user experience</p>
                 </div>
-                <div className="text-xs text-orange-400 font-semibold mb-3 uppercase">Thai Restaurant • Seattle</div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-4 group-hover:text-orange-400 transition-colors">
-                  Thaprachan Thai
-                </h3>
-                <div className="space-y-3 mb-6">
-                  <div>
-                    <p className="text-xs sm:text-sm text-gray-400 mb-1">Problem</p>
-                    <p className="text-sm sm:text-base text-white">Slow website, low Google visibility, declining online orders</p>
-                  </div>
-                  <div>
-                    <p className="text-xs sm:text-sm text-gray-400 mb-1">90-Day Result</p>
-                    <p className="text-sm sm:text-base text-white font-semibold">+45% online orders • 3x Google Maps impressions</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 text-orange-400 text-sm font-semibold">
-                  View Case Study
-                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
+                <div>
+                  <p className="text-xs sm:text-sm text-gray-400 mb-1">Services</p>
+                  <p className="text-sm sm:text-base text-white font-semibold">Website • Local SEO • GBP Optimization</p>
                 </div>
               </div>
-            </Link>
+            </div>
 
-            {/* Case 2 */}
-            <Link href="/case-studies/larb-thai-seattle" className="group">
-              <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 border border-white/10 rounded-lg p-5 sm:p-6 md:p-8 hover:border-orange-500/50 transition-all h-full">
-                <div className="flex items-center gap-3 mb-4">
-                  <Image 
-                    src="/partners/larblogo.webp" 
-                    alt="Larb Thai restaurant logo" 
-                    width={48} 
-                    height={48}
-                    className="h-10 sm:h-12 w-auto"
-                  />
+            {/* Partner 2 */}
+            <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 border border-white/10 rounded-lg p-5 sm:p-6 md:p-8 hover:border-orange-500/50 transition-all h-full">
+              <div className="flex items-center gap-3 mb-4">
+                <Image 
+                  src="/partners/larblogo.webp" 
+                  alt="Larb Thai restaurant logo" 
+                  width={48} 
+                  height={48}
+                  className="h-10 sm:h-12 w-auto"
+                />
+              </div>
+              <div className="text-xs text-red-400 font-semibold mb-3 uppercase">Thai Restaurant • Seattle</div>
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 group-hover:text-orange-400 transition-colors">
+                Larb Thai
+              </h3>
+              <div className="space-y-3 mb-6">
+                <div>
+                  <p className="text-xs sm:text-sm text-gray-400 mb-1">What We Built</p>
+                  <p className="text-sm sm:text-base text-white">Fast-loading website with integrated ordering system and strategic local SEO</p>
                 </div>
-                <div className="text-xs text-red-400 font-semibold mb-3 uppercase">Thai Restaurant • Seattle</div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-4 group-hover:text-orange-400 transition-colors">
-                  Larb Thai
-                </h3>
-                <div className="space-y-3 mb-6">
-                  <div>
-                    <p className="text-xs sm:text-sm text-gray-400 mb-1">Problem</p>
-                    <p className="text-sm sm:text-base text-white">Slow website, poor online visibility, losing customers to competitors</p>
-                  </div>
-                  <div>
-                    <p className="text-xs sm:text-sm text-gray-400 mb-1">90-Day Result</p>
-                    <p className="text-sm sm:text-base text-white font-semibold">+250% online orders • +180% organic traffic</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 text-orange-400 text-sm font-semibold">
-                  View Case Study
-                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
+                <div>
+                  <p className="text-xs sm:text-sm text-gray-400 mb-1">Services</p>
+                  <p className="text-sm sm:text-base text-white font-semibold">Website • SEO • Google Ads • Meta Ads</p>
                 </div>
               </div>
-            </Link>
+            </div>
 
-            {/* Case 3 */}
-            <Link href="/case-studies" className="group">
-              <div className="bg-gradient-to-br from-orange-900/20 to-red-900/20 border border-white/10 rounded-lg p-5 sm:p-6 md:p-8 hover:border-orange-500/50 transition-all h-full">
-                <div className="flex items-center gap-3 mb-4">
-                  <Image 
-                    src="/partners/chadalynnwoodlogo.webp" 
-                    alt="Chada Thai restaurant logo" 
-                    width={48} 
-                    height={48}
-                    className="h-8 sm:h-8 w-auto"
-                  />
+            {/* Partner 3 */}
+            <div className="bg-gradient-to-br from-orange-900/20 to-red-900/20 border border-white/10 rounded-lg p-5 sm:p-6 md:p-8 hover:border-orange-500/50 transition-all h-full">
+              <div className="flex items-center gap-3 mb-4">
+                <Image 
+                  src="/partners/chadalynnwoodlogo.webp" 
+                  alt="Chada Thai restaurant logo" 
+                  width={48} 
+                  height={48}
+                  className="h-8 sm:h-8 w-auto"
+                />
+              </div>
+              <div className="text-xs text-orange-400 font-semibold mb-3 uppercase">Thai Restaurant • Lynnwood</div>
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 group-hover:text-orange-400 transition-colors">
+                Chada Thai
+              </h3>
+              <div className="space-y-3 mb-6">
+                <div>
+                  <p className="text-xs sm:text-sm text-gray-400 mb-1">What We Built</p>
+                  <p className="text-sm sm:text-base text-white">Mobile-first redesign with optimized CTAs and streamlined user journey</p>
                 </div>
-                <div className="text-xs text-orange-400 font-semibold mb-3 uppercase">Thai Restaurant • Lynnwood</div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-4 group-hover:text-orange-400 transition-colors">
-                  Chada Thai
-                </h3>
-                <div className="space-y-3 mb-6">
-                  <div>
-                    <p className="text-xs sm:text-sm text-gray-400 mb-1">Problem</p>
-                    <p className="text-sm sm:text-base text-white">Outdated site, poor mobile experience, losing customers to competitors</p>
-                  </div>
-                  <div>
-                    <p className="text-xs sm:text-sm text-gray-400 mb-1">90-Day Result</p>
-                    <p className="text-sm sm:text-base text-white font-semibold">+52% conversion rate • 40% more phone calls</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 text-orange-400 text-sm font-semibold">
-                  View Case Study
-                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
+                <div>
+                  <p className="text-xs sm:text-sm text-gray-400 mb-1">Services</p>
+                  <p className="text-sm sm:text-base text-white font-semibold">Website Redesign • CRO • Call Tracking</p>
                 </div>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </section>

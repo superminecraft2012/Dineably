@@ -73,33 +73,33 @@ export default function WhyUs() {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* Our Commitment Section */}
       <section className="py-16 bg-gradient-to-b from-black to-gray-900 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-3">
-                65+
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-3">
+                Seattle-Area
               </div>
-              <div className="text-gray-400 text-sm uppercase tracking-wide">Restaurants Supported</div>
+              <div className="text-gray-400 text-sm uppercase tracking-wide">Restaurant Focus</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-3">
-                +42%
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-3">
+                Fast Sites
               </div>
-              <div className="text-gray-400 text-sm uppercase tracking-wide">Median Order Uplift</div>
+              <div className="text-gray-400 text-sm uppercase tracking-wide">Sub-2.5s Load Times</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-3">
-                &lt;4hr
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-3">
+                Quick Response
               </div>
-              <div className="text-gray-400 text-sm uppercase tracking-wide">Average Response Time</div>
+              <div className="text-gray-400 text-sm uppercase tracking-wide">Same-Day Support</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-3">
-                2.3s
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent mb-3">
+                Data-Driven
               </div>
-              <div className="text-gray-400 text-sm uppercase tracking-wide">Avg Site Load Time</div>
+              <div className="text-gray-400 text-sm uppercase tracking-wide">Full Analytics Tracking</div>
             </div>
           </div>
         </div>
@@ -163,7 +163,7 @@ export default function WhyUs() {
               <ul className="space-y-2 text-sm text-gray-300">
                 <li className="flex items-start gap-2">
                   <span className="text-orange-500 mt-1">•</span>
-                  <span>90% of our clients rank in top 3 local pack within 90 days</span>
+                  <span>Strategic approach designed to improve local pack rankings</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-orange-500 mt-1">•</span>
@@ -171,7 +171,7 @@ export default function WhyUs() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-orange-500 mt-1">•</span>
-                  <span>Review generation that actually works (4.5+ avg rating)</span>
+                  <span>Review generation systems and response management</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-orange-500 mt-1">•</span>
@@ -237,15 +237,15 @@ export default function WhyUs() {
                 ))}
               </div>
               <p className="text-gray-300 mb-6 italic">
-                &quot;Our online orders went up 45% in the first 90 days. The new website is fast and our customers actually love using it. Best investment we&apos;ve made.&quot;
+                &quot;The new website is fast and our customers love using it. We&apos;ve seen more online orders since launching.&quot;
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-xl font-bold">
                   T
                 </div>
                 <div>
-                  <div className="font-semibold">Thanaporn S.</div>
-                  <div className="text-sm text-gray-400">Owner, Thaprachan Thai</div>
+                  <div className="font-semibold">Restaurant Owner</div>
+                  <div className="text-sm text-gray-400">Thaprachan Thai • Seattle</div>
                 </div>
               </div>
             </div>
@@ -260,15 +260,15 @@ export default function WhyUs() {
                 ))}
               </div>
               <p className="text-gray-300 mb-6 italic">
-                &quot;Our website was slow and outdated. Dineably rebuilt it, optimized our SEO, and our online orders increased by 250% in just 3 months. Incredible results.&quot;
+                &quot;Our website was slow and outdated. Dineably rebuilt it and optimized our SEO. We&apos;re getting more online traffic and orders now.&quot;
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-xl font-bold">
                   L
                 </div>
                 <div>
-                  <div className="font-semibold">Layla N.</div>
-                  <div className="text-sm text-gray-400">Owner, Larb Thai Seattle</div>
+                  <div className="font-semibold">Restaurant Owner</div>
+                  <div className="text-sm text-gray-400">Larb Thai • Seattle</div>
                 </div>
               </div>
             </div>
@@ -283,15 +283,15 @@ export default function WhyUs() {
                 ))}
               </div>
               <p className="text-gray-300 mb-6 italic">
-                &quot;The analytics dashboard is incredible. We can see exactly where orders come from and the team responds to questions within hours. Worth every penny.&quot;
+                &quot;The analytics dashboard helps us understand where orders come from. The team is very responsive to questions. Happy with the service.&quot;
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center text-xl font-bold">
                   C
                 </div>
                 <div>
-                  <div className="font-semibold">Chada L.</div>
-                  <div className="text-sm text-gray-400">Owner, Chada Thai Lynnwood</div>
+                  <div className="font-semibold">Restaurant Owner</div>
+                  <div className="text-sm text-gray-400">Chada Thai • Lynnwood</div>
                 </div>
               </div>
             </div>
