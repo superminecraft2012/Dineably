@@ -156,36 +156,32 @@ export default function SeattleRestaurantMarketing() {
         </div>
       </section>
 
-      {/* Case Studies */}
+      {/* Our Partners */}
       <section className="py-20 bg-black">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-12 text-center">Seattle Restaurant Success Stories</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center">Our Seattle Restaurant Partners</h2>
           
           <div className="space-y-6">
-            <Link href="/case-studies/thaprachan-thai-seattle">
+            <Link href="/case-studies">
               <div className="border border-white/10 rounded-lg p-6 hover:border-orange-500/50 transition-all">
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <h3 className="text-2xl font-bold mb-2">Thaprachan Thai - Seattle</h3>
-                    <p className="text-gray-400">Transformed slow website into conversion machine</p>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-3xl font-bold text-orange-400">+45%</div>
-                    <div className="text-sm text-gray-400">Online Orders</div>
+                    <p className="text-gray-400">Complete website redesign with optimized menu presentation and mobile-first user experience</p>
                   </div>
                 </div>
-                <div className="grid grid-cols-3 gap-4 text-sm">
+                <div className="grid grid-cols-3 gap-4 text-sm mt-4">
                   <div>
-                    <span className="text-gray-400">Load Time:</span>
-                    <span className="ml-2 font-semibold">1.8s</span>
+                    <span className="text-gray-400">Services:</span>
+                    <span className="ml-2 font-semibold">Website</span>
                   </div>
                   <div>
-                    <span className="text-gray-400">GBP Growth:</span>
-                    <span className="ml-2 font-semibold">3x</span>
+                    <span className="text-gray-400">Focus:</span>
+                    <span className="ml-2 font-semibold">Local SEO</span>
                   </div>
                   <div>
-                    <span className="text-gray-400">Timeline:</span>
-                    <span className="ml-2 font-semibold">90 days</span>
+                    <span className="text-gray-400">Platform:</span>
+                    <span className="ml-2 font-semibold">Next.js</span>
                   </div>
                 </div>
               </div>
