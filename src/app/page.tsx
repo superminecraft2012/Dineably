@@ -52,7 +52,7 @@ export default function Home() {
 
   // Letter scramble animation for "Dineably"
   useEffect(() => {
-    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const letters = 'abcdefghijklmnopqrstuvwxyz';
     const targetText = 'Dineably';
     let iteration = 0;
     const scrambleDuration = 50; // ms per frame
