@@ -638,15 +638,15 @@ export default function Services() {
             </p>
           </div>
 
-          {/* Most Popular Badge - Positioned above table */}
-          <div className="flex justify-center mb-4">
-            <div className="animate-bounce bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap shadow-lg shadow-orange-500/50">
-              Most Popular
-            </div>
-          </div>
-
           {/* Responsive Table */}
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto relative pt-14">
+            {/* Most Popular Badge - Positioned above Grow column */}
+            <div className="absolute left-[62.5%] -translate-x-1/2 top-0 z-10">
+              <div className="animate-bounce [animation-duration:2s] bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap shadow-lg shadow-orange-500/50">
+                Most Popular
+              </div>
+            </div>
+            
             <table className="w-full border-collapse bg-black border border-white/10 rounded-lg overflow-hidden">
               <thead>
                 <tr className="bg-gradient-to-r from-orange-900/20 to-red-900/20">
