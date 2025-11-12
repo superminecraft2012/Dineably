@@ -11,11 +11,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/process',
     '/case-studies',
     '/faq',
+    '/book-audit',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: route === '' ? 1 : 0.8,
+    priority: route === '' ? 1 : route === '/book-audit' ? 0.9 : 0.8,
   }))
 
   // City pages
