@@ -650,7 +650,7 @@ export default function Services() {
                   </th>
                   <th className="px-6 py-5 text-center border-b border-l border-white/10 bg-orange-500/10 relative">
                     {/* Most Popular Badge - Dynamically positioned above this column */}
-                    <div className="absolute left-1/2 -translate-x-1/2 -top-14 z-10">
+                    <div className="absolute left-1/2 -translate-x-1/2 -top-14 z-50">
                       <div className="animate-bounce [animation-duration:2s] bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap shadow-lg shadow-orange-500/50">
                         Most Popular
                       </div>
@@ -847,7 +847,7 @@ export default function Services() {
 
             {/* Grow Package */}
             <div className="bg-gradient-to-br from-orange-900/10 to-red-900/10 border-2 border-orange-500/50 rounded-lg p-8 relative">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-1 rounded-full text-sm font-semibold z-50">
                 Most Popular
               </div>
               <div className="text-sm text-orange-400 font-semibold mb-2 uppercase">For Growing Brands</div>
