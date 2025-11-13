@@ -6,9 +6,48 @@ import { useEffect, useRef, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useModal } from "@/components/ModalProvider";
+import { trackButtonClick } from "@/lib/analytics";
 
 export default function Home() {
   const { openModal } = useModal();
+
+  const handleHeroAuditClick = () => {
+    trackButtonClick({
+      button_name: 'Book Audit',
+      button_location: 'hero',
+      page: 'homepage',
+      destination: 'contact_modal'
+    });
+    openModal();
+  };
+
+  const handleCaseStudyClick = () => {
+    trackButtonClick({
+      button_name: 'See Case Study',
+      button_location: 'hero',
+      page: 'homepage',
+      destination: '/case-studies'
+    });
+  };
+
+  const handleCityClick = (city: string) => {
+    trackButtonClick({
+      button_name: `${city} Link`,
+      button_location: 'geo_section',
+      page: 'homepage',
+      destination: `/${city.toLowerCase()}-restaurant-marketing`
+    });
+  };
+
+  const handleFAQClick = () => {
+    trackButtonClick({
+      button_name: 'View All FAQs',
+      button_location: 'faq_section',
+      page: 'homepage',
+      destination: '/faq'
+    });
+  };
+
   const [restaurantCount, setRestaurantCount] = useState(0);
   const countUpRef = useRef<HTMLSpanElement>(null);
   const [dineablyText, setDineablyText] = useState('Dineably');
@@ -165,7 +204,7 @@ export default function Home() {
           {/* CTA Buttons - Above the glow */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 relative z-10 px-4 sm:px-0 revealable">
             <button 
-              onClick={openModal}
+              onClick={handleHeroAuditClick}
               className={`w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 flex items-center justify-center gap-2 shadow-lg shadow-orange-500/50 cta-button cta-pulse ${scrambleComplete ? 'gold-glow-fade-button' : ''}`}
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -176,7 +215,7 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
-            <Link href="/case-studies" className="w-full sm:w-auto">
+            <Link href="/case-studies" onClick={handleCaseStudyClick} className="w-full sm:w-auto">
             <button className="w-full bg-transparent border border-white/20 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-white/5 flex items-center justify-center gap-2 cta-button">
                 See Case Study
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -555,6 +594,7 @@ export default function Home() {
               <Link 
                 key={city}
                 href={`/${city.toLowerCase()}-restaurant-marketing`}
+                onClick={() => handleCityClick(city)}
                 className="px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base bg-black border border-white/10 rounded-lg hover:border-orange-500/50 hover:bg-white/5 transition-all text-gray-300 hover:text-white font-medium"
               >
                 {city}
@@ -606,7 +646,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-8">
-            <Link href="/faq" className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-semibold transition-colors">
+            <Link href="/faq" onClick={handleFAQClick} className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-semibold transition-colors">
               View All FAQs
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

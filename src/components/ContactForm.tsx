@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { trackAuditSubmit } from '@/lib/analytics';
 
 interface ContactFormModalProps {
   isOpen: boolean;
@@ -77,12 +78,10 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
         });
         
         // Track form submission in analytics
-        if (typeof window !== 'undefined' && (window as any).gtag) {
-          (window as any).gtag('event', 'form_submission', {
-            event_category: 'Contact',
-            event_label: 'Free Audit Form',
-          });
-        }
+        trackAuditSubmit({
+          form_location: 'contact_modal',
+          form_type: 'free_audit'
+        });
       } else {
         setStatus('error');
         setErrorMessage('Something went wrong. Please try again or call us directly at (425) 420-7090.');

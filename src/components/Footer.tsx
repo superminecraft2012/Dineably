@@ -1,6 +1,33 @@
+'use client';
+
 import Link from "next/link";
+import { trackButtonClick, trackNavigationClick } from "@/lib/analytics";
 
 export default function Footer() {
+  const handleSocialClick = (platform: string, url: string) => {
+    trackButtonClick({
+      button_name: `${platform} Social Link`,
+      button_location: 'footer',
+      page: 'footer',
+      destination: url
+    });
+  };
+
+  const handleServiceAreaClick = (city: string) => {
+    trackNavigationClick({
+      link_text: city,
+      destination: `/${city.toLowerCase().replace(', wa', '').replace(' ', '-')}-restaurant-marketing`,
+      location: 'footer_service_areas'
+    });
+  };
+
+  const handleQuickLinkClick = (linkText: string, destination: string) => {
+    trackNavigationClick({
+      link_text: linkText,
+      destination,
+      location: 'footer_quick_links'
+    });
+  };
   return (
     <footer className="border-t border-white/10 bg-black text-white">
       <div className="max-w-7xl mx-auto px-6 py-16">
@@ -38,37 +65,37 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <Link href="/" className="hover:text-white transition-colors text-sm">
+                <Link href="/" onClick={() => handleQuickLinkClick('Home', '/')} className="hover:text-white transition-colors text-sm">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/why-us" className="hover:text-white transition-colors text-sm">
+                <Link href="/why-us" onClick={() => handleQuickLinkClick('Why Us', '/why-us')} className="hover:text-white transition-colors text-sm">
                   Why Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-white transition-colors text-sm">
+                <Link href="/services" onClick={() => handleQuickLinkClick('Services', '/services')} className="hover:text-white transition-colors text-sm">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/process" className="hover:text-white transition-colors text-sm">
+                <Link href="/process" onClick={() => handleQuickLinkClick('Process', '/process')} className="hover:text-white transition-colors text-sm">
                   Process
                 </Link>
               </li>
               <li>
-                <Link href="/case-studies" className="hover:text-white transition-colors text-sm">
+                <Link href="/case-studies" onClick={() => handleQuickLinkClick('Case Studies', '/case-studies')} className="hover:text-white transition-colors text-sm">
                   Case Studies
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="hover:text-white transition-colors text-sm">
+                <Link href="/faq" onClick={() => handleQuickLinkClick('FAQ', '/faq')} className="hover:text-white transition-colors text-sm">
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link href="/sitemap-page" className="hover:text-white transition-colors text-sm">
+                <Link href="/sitemap-page" onClick={() => handleQuickLinkClick('Sitemap', '/sitemap-page')} className="hover:text-white transition-colors text-sm">
                   Sitemap
                 </Link>
               </li>
@@ -80,32 +107,32 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Service Areas</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <Link href="/seattle-restaurant-marketing" className="hover:text-white transition-colors">
+                <Link href="/seattle-restaurant-marketing" onClick={() => handleServiceAreaClick('Seattle, WA')} className="hover:text-white transition-colors">
                   Seattle, WA
                 </Link>
               </li>
               <li>
-                <Link href="/bellevue-restaurant-marketing" className="hover:text-white transition-colors">
+                <Link href="/bellevue-restaurant-marketing" onClick={() => handleServiceAreaClick('Bellevue, WA')} className="hover:text-white transition-colors">
                   Bellevue, WA
                 </Link>
               </li>
               <li>
-                <Link href="/kirkland-restaurant-marketing" className="hover:text-white transition-colors">
+                <Link href="/kirkland-restaurant-marketing" onClick={() => handleServiceAreaClick('Kirkland, WA')} className="hover:text-white transition-colors">
                   Kirkland, WA
                 </Link>
               </li>
               <li>
-                <Link href="/redmond-restaurant-marketing" className="hover:text-white transition-colors">
+                <Link href="/redmond-restaurant-marketing" onClick={() => handleServiceAreaClick('Redmond, WA')} className="hover:text-white transition-colors">
                   Redmond, WA
                 </Link>
               </li>
               <li>
-                <Link href="/lynnwood-restaurant-marketing" className="hover:text-white transition-colors">
+                <Link href="/lynnwood-restaurant-marketing" onClick={() => handleServiceAreaClick('Lynnwood, WA')} className="hover:text-white transition-colors">
                   Lynnwood, WA
                 </Link>
               </li>
               <li>
-                <Link href="/woodinville-restaurant-marketing" className="hover:text-white transition-colors">
+                <Link href="/woodinville-restaurant-marketing" onClick={() => handleServiceAreaClick('Woodinville, WA')} className="hover:text-white transition-colors">
                   Woodinville, WA
                 </Link>
               </li>
@@ -123,6 +150,7 @@ export default function Footer() {
                 href="https://www.facebook.com/profile.php?id=61583398440331" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                onClick={() => handleSocialClick('Facebook', 'https://www.facebook.com/profile.php?id=61583398440331')}
                 className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -134,6 +162,7 @@ export default function Footer() {
                 href="https://www.instagram.com/godineably" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                onClick={() => handleSocialClick('Instagram', 'https://www.instagram.com/godineably')}
                 className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -145,6 +174,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/dineably" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                onClick={() => handleSocialClick('LinkedIn', 'https://www.linkedin.com/company/dineably')}
                 className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -156,6 +186,7 @@ export default function Footer() {
                 href="https://twitter.com/dineably" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                onClick={() => handleSocialClick('Twitter', 'https://twitter.com/dineably')}
                 className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -177,6 +208,15 @@ export default function Footer() {
             <Link href="/terms" className="hover:text-white transition-colors">
               Terms of Service
             </Link>
+            <button 
+              onClick={() => {
+                localStorage.removeItem('cookie_consent');
+                window.location.reload();
+              }}
+              className="hover:text-white transition-colors cursor-pointer"
+            >
+              Cookie Settings
+            </button>
           </div>
         </div>
       </div>

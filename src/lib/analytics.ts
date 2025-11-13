@@ -232,6 +232,59 @@ export const trackPageView = (url: string, title: string) => {
 };
 
 /**
+ * Track generic button clicks with custom event names
+ */
+export const trackButtonClick = (params: {
+  button_name: string;
+  button_location: string;
+  page: string;
+  destination?: string;
+}) => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'button_click', {
+      button_name: params.button_name,
+      button_location: params.button_location,
+      page: params.page,
+      destination: params.destination || 'N/A',
+      event_category: 'engagement',
+      event_label: `${params.page} - ${params.button_name}`,
+    });
+  }
+
+  // Meta Pixel Event
+  if (typeof window !== 'undefined' && window.fbq) {
+    window.fbq('trackCustom', 'ButtonClick', {
+      button_name: params.button_name,
+      button_location: params.button_location,
+      page: params.page,
+    });
+  }
+
+  console.log('📊 Button Click Tracked:', params);
+};
+
+/**
+ * Track navigation link clicks
+ */
+export const trackNavigationClick = (params: {
+  link_text: string;
+  destination: string;
+  location: string;
+}) => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'navigation_click', {
+      link_text: params.link_text,
+      destination: params.destination,
+      location: params.location,
+      event_category: 'navigation',
+      event_label: `${params.location} - ${params.link_text}`,
+    });
+  }
+
+  console.log('📊 Navigation Click Tracked:', params);
+};
+
+/**
  * Initialize analytics on page load
  */
 export const initializeAnalytics = () => {
