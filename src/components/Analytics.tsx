@@ -48,36 +48,12 @@ export default function Analytics() {
 
   return (
     <>
-      {/* Google Consent Mode v2 - Set default to denied */}
-      <Script id="google-consent-mode" strategy="beforeInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          
-          // Default consent to denied (will be updated by cookie banner)
-          gtag('consent', 'default', {
-            'analytics_storage': 'denied',
-            'ad_storage': 'denied',
-            'ad_user_data': 'denied',
-            'ad_personalization': 'denied',
-            'functionality_storage': 'granted',
-            'personalization_storage': 'denied',
-            'security_storage': 'granted',
-            'wait_for_update': 500
-          });
-          
-          // For users in regions without strict consent requirements
-          gtag('set', 'ads_data_redaction', true);
-          gtag('set', 'url_passthrough', true);
-        `}
-      </Script>
-
       {/* Tracking component wrapped in Suspense */}
       <Suspense fallback={null}>
         <AnalyticsTracker GA4_ID={GA4_ID} />
       </Suspense>
 
-      {/* Google Analytics 4 */}
+      {/* Google Analytics 4 - Tracks immediately without consent blocking */}
       {GA4_ID && (
         <>
           <Script

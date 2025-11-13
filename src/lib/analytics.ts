@@ -233,6 +233,7 @@ export const trackPageView = (url: string, title: string) => {
 
 /**
  * Track generic button clicks with custom event names
+ * Now tracks immediately without consent requirements
  */
 export const trackButtonClick = (params: {
   button_name: string;
