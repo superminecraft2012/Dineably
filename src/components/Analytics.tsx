@@ -39,9 +39,10 @@ function AnalyticsTracker({ GA4_ID }: { GA4_ID: string }) {
 }
 
 export default function Analytics() {
-  // Get tracking IDs from environment variables
-  // Fallback to hardcoded G-PBDEBXGEPN if env var not set
-  const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID || 'G-PBDEBXGEPN';
+  // HARDCODED GA4 ID - ALWAYS USE THIS
+  const GA4_ID = 'G-PBDEBXGEPN';
+  
+  // Get other tracking IDs from environment variables if needed
   const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID || '';
   const GOOGLE_ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || '';
 
