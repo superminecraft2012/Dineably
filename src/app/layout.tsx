@@ -134,6 +134,23 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="https://dineably.com/logo.webp" />
         <link rel="apple-touch-icon" href="https://dineably.com/logo.webp" />
+        
+        {/* Google Analytics - Loaded immediately in head as per Google instructions */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PBDEBXGEPN"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-PBDEBXGEPN', {
+                page_path: window.location.pathname,
+                send_page_view: true
+              });
+            `,
+          }}
+        />
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

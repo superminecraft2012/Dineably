@@ -48,32 +48,12 @@ export default function Analytics() {
 
   return (
     <>
-      {/* Tracking component wrapped in Suspense */}
+      {/* Tracking component for page view tracking */}
       <Suspense fallback={null}>
         <AnalyticsTracker GA4_ID={GA4_ID} />
       </Suspense>
 
-      {/* Google Analytics 4 - Tracks immediately without consent blocking */}
-      {GA4_ID && (
-        <>
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
-            strategy="afterInteractive"
-          />
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${GA4_ID}', {
-                page_path: window.location.pathname,
-                send_page_view: true,
-                cookie_flags: 'SameSite=None;Secure'
-              });
-            `}
-          </Script>
-        </>
-      )}
+      {/* Note: GA4 base script is loaded in layout.tsx <head> for immediate detection */}
 
       {/* Google Ads Conversion Tracking */}
       {GOOGLE_ADS_ID && (
