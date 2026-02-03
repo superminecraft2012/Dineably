@@ -51,7 +51,7 @@ export default function RootLayout({
     "logo": "https://dineably.com/logo-with-text.webp",
     "description": "Restaurant marketing agency specializing in websites, local SEO, and digital advertising",
     "telephone": "+1-425-420-7090",
-    "email": "hello@dineably.com",
+    "email": "imignicholas@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Seattle",

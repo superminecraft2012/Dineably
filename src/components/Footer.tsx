@@ -48,8 +48,8 @@ export default function Footer() {
                   </a>
                 </p>
                 <p className="text-sm">
-                  <a href="mailto:hello@dineably.com" className="hover:text-white transition-colors">
-                    hello@dineably.com
+                  <a href="mailto:imignicholas@gmail.com" className="hover:text-white transition-colors">
+                    imignicholas@gmail.com
                   </a>
                 </p>
               </div>
