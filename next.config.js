@@ -20,6 +20,11 @@ const nextConfig = {
         destination: 'https://g.page/r/CSuJCc4uhySpEBM/review',
         permanent: false, // 302 so we can change or remove later
       },
+      {
+        source: '/reviews/kuru-kuru-sushi',
+        destination: 'https://g.page/r/CSy9y0gEohsHEBM/review',
+        permanent: false,
+      },
     ]
   },
 
