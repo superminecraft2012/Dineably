@@ -12,10 +12,14 @@ const nextConfig = {
   },
 
   // Redirects for SEO (non-www to www, http to https handled by hosting)
+  // Review redirects: we control these so we can change/remove if client doesn't renew
   async redirects() {
     return [
-      // Add any specific page redirects here as needed
-      // Example: old URLs to new URLs with 301 permanent redirects
+      {
+        source: '/reviews/zen-sushi',
+        destination: 'https://g.page/r/CSuJCc4uhySpEBM/review',
+        permanent: false, // 302 so we can change or remove later
+      },
     ]
   },
 
