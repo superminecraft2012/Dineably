@@ -140,7 +140,7 @@ export default function CookieConsent() {
                     We use cookies to improve your experience and analyze site traffic.
                   </p>
                   <p className="text-xs text-gray-500">
-                    <a href="/privacy-policy" className="text-orange-600 hover:text-orange-700 underline">
+                    <a href="/privacy" className="text-orange-600 hover:text-orange-700 underline">
                       Privacy Policy
                     </a>
                   </p>
